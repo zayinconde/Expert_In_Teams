@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=LM2576S-3.3/NOPB
+PartCategory=Integrated Circuit
+PackageCategory=TO-XXX (Inc. DPAK)
+PinCount=6
+Version=1.3
+Released=2015-07-10 15:56:34
+Downloaded=2025-10-28 14:57:01
+3D=Y

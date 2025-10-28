@@ -1,0 +1,9 @@
+Manufacturer=Lumissil Microsystems
+PartNumber=IS31AP2005-SLS2-TR
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=8
+Version=2.1
+Released=2025-02-28 14:29:48
+Downloaded=2025-10-28 13:27:45
+3D=Y

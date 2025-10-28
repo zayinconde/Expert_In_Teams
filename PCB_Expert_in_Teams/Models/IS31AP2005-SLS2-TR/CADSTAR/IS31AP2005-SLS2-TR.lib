@@ -1,0 +1,16 @@
+.IS31AP2005-SLS2-TR :1 ;2.95W Mono Filter-less Class-D Audio Power Amplifier, MSOP-8 (3.0mm x 5.0mm), T&R
+SOP65P490X110-8N
+*STM IC
+*NGS
+*PLB 1="SDB" 2="NC" 3="IN+" 4="IN-" 5="OUT+" 6="VCC" 7="GND" 8="OUT-"
+*MXP 8
+*DFN IS31AP2005-SLS2-TR
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Manufacturer_Name (Lumissil Microsystems)
+~!Manufacturer_Part_Number (IS31AP2005-SLS2-TR)
+~!Link Datasheet (https://www.lumissil.com/assets/pdf/core/IS31AP2005_DS.pdf)
+~!Height (1.1mm)
+~!3D_Model (IS31AP2005-SLS2-TR)
+IS31AP2005-SLS2-TR
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

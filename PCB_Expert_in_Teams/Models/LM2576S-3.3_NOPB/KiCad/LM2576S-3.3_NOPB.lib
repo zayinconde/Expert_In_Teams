@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model LM2576S-3.3_NOPB
+#/155289/1780402/2.50/6/3/Integrated Circuit
+DEF LM2576S-3.3_NOPB IC 0 30 Y Y 1 F N
+F0 "IC" 1450 300 50 H V L CNN
+F1 "LM2576S-3.3_NOPB" 1450 200 50 H V L CNN
+F2 "TO170P1435X465-6N" 1450 100 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/lm2576.pdf" 1450 0 50 H I L CNN
+F4 "SIMPLE SWITCHER&#174; 40V, 3A Low Component Count Step-Down Regulator" 1450 -100 50 H I L CNN "Description"
+F5 "4.65" 1450 -200 50 H I L CNN "Height"
+F6 "926-LM2576S-3.3/NOPB" 1450 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2576S-3.3-NOPB?qs=X1J7HmVL2ZHgUfnXFulfHg%3D%3D" 1450 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Texas Instruments" 1450 -500 50 H I L CNN "Manufacturer_Name"
+F9 "LM2576S-3.3/NOPB" 1450 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X VIN 1 0 0 200 R 50 50 0 0 I
+X OUTPUT 2 0 -100 200 R 50 50 0 0 O
+X GROUND 3 0 -200 200 R 50 50 0 0 P
+X FEEDBACK 4 0 -300 200 R 50 50 0 0 P
+X ~ON~/OFF 5 0 -400 200 R 50 50 0 0 P
+X GND_(TAB) 6 1600 0 200 L 50 50 0 0 W
+P 5 0 1 6 200 100 1400 100 1400 -500 200 -500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

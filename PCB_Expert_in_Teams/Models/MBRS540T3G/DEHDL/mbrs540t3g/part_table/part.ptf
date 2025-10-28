@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MBRS540T3G'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "onsemi", "MBRS540T3G" (!) = "", "DIOM7958X256N", "Diodes Moulded", "", "", "Compact Surface Mountable Package with J-Bend leads; Rectangular Package for Automated Handling; Highly Stable Oxide Passivated Junction; Excellent Ability to Withstand Reverse Avalanche Energy Transients; Guardring for Stress Protection; Cathode Lead Indicated by polarity Notch; ESD Ratings, Machine Model = C, Human Body Model = 3B; Device Meets MSL 1 Requirements; Pb-Free Package is Available; AEC-Q101 Qualified and PPAP Capable; NRVB Prefix for Automotive and Other Applications Requiring Unique Site and ", "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF", "2.56 mm"
+END_PART
+
+END.

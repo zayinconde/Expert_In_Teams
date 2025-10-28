@@ -1,4 +1,4 @@
-26342933908883584
+26349980572419343
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59696,6 +59696,13 @@ Crystal or Oscillator
 4
 4
 EXT_AI_DEPUTY_Library
+DIOM7958X256N
+SMC CASE403-03
+Diode
+0
+2
+2
+EXT_AI_DEPUTY_Library
 MODULE_ESP32-WROOM-32UE_M113EH6400UH3Q0_
 
 
@@ -59709,6 +59716,27 @@ Integrated Circuit
 0
 12
 12
+EXT_AI_DEPUTY_Library
+SOP65P490X110-8N
+MSOP-8_2025
+Integrated Circuit
+0
+8
+8
+EXT_AI_DEPUTY_Library
+SOP65P640X110-21N
+PWP0020A
+Integrated Circuit
+0
+21
+21
+EXT_AI_DEPUTY_Library
+TO170P1435X465-6N
+KTT0005B
+Integrated Circuit
+0
+6
+6
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters

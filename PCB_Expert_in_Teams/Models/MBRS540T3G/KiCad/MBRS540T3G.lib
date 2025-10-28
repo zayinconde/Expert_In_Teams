@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model MBRS540T3G
+#/225033/1780402/2.50/2/2/Diode
+DEF MBRS540T3G D 0 30 Y Y 1 F N
+F0 "D" 450 200 50 H V L CNN
+F1 "MBRS540T3G" 450 100 50 H V L CNN
+F2 "DIOM7958X256N" 450 0 50 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/MBRS540T3-D.PDF" 450 -100 50 H I L CNN
+F4 "Compact Surface Mountable Package with J-Bend leads; Rectangular Package for Automated Handling; Highly Stable Oxide Passivated Junction; Excellent Ability to Withstand Reverse Avalanche Energy Transients; Guardring for Stress Protection; Cathode Lead Indicated by polarity Notch; ESD Ratings, Machine Model = C, Human Body Model = 3B; Device Meets MSL 1 Requirements; Pb-Free Package is Available; AEC-Q101 Qualified and PPAP Capable; NRVB Prefix for Automotive and Other Applications Requiring Unique Site and " 450 -200 50 H I L CNN "Description"
+F5 "2.56" 450 -300 50 H I L CNN "Height"
+F6 "" 450 -400 50 H I L CNN "Farnell Part Number"
+F7 "" 450 -500 50 H I L CNN "Farnell Price/Stock"
+F8 "onsemi" 450 -600 50 H I L CNN "Manufacturer_Name"
+F9 "MBRS540T3G" 450 -700 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 600 0 100 L 50 50 0 0 P
+P 2 0 1 6 200 100 200 -100 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 400 0 500 0 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+ENDDRAW
+ENDDEF
+#
+#End Library

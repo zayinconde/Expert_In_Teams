@@ -625,6 +625,14 @@
     [
       "4600983a-86b8-49e8-8db6-b0ddbc3ab361",
       "Audio Amplifier Module"
+    ],
+    [
+      "82ecce59-750a-4f55-a6e5-60f0e896ad8e",
+      "Stepdown3v3"
+    ],
+    [
+      "a945ac55-a1df-454a-a270-8f1f277a9157",
+      "stepup12v"
     ]
   ],
   "text_variables": {}

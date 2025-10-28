@@ -1,0 +1,150 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "LM2576S-3.3_NOPB"
+   (description "SIMPLE SWITCHER&#174; 40V, 3A Low Component Count Step-Down Regulator")
+   (family "ANA")
+   (package "TO170P1435X465-6N")
+   (attribute "Datasheet Link" "http://www.ti.com/lit/ds/symlink/lm2576.pdf")
+   (attribute "Geometry.Height" "4.65mm")
+   (attribute "Mouser Part Number" "926-LM2576S-3.3/NOPB")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2576S-3.3-NOPB?qs=X1J7HmVL2ZHgUfnXFulfHg%3D%3D")
+   (attribute "Manufacturer_Name" "Texas Instruments")
+   (attribute "Manufacturer_Part_Number" "LM2576S-3.3/NOPB")
+   (gate
+    (symbol "LM2576S-3.3_NOPB")
+    (pin "VIN" 1 IP)
+    (pin "OUTPUT" 2 OP)
+    (pin "GROUND" 3 PS)
+    (pin "FEEDBACK" 4 PS)
+    (pin "$ON$/OFF" 5 PS)
+    (pin "GND_(TAB)" 6 PP)
+   )
+  )
+  (symbol "LM2576S-3.3_NOPB"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1400 100) (pt 1400 -500) (pt 200 -500) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1600 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "TO170P1435X465-6N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.001)
+     (path
+      (closed true)
+      (pt -2.885 -5.205)
+      (pt 6.005 -5.205)
+      (pt 6.005 5.205)
+      (pt -2.885 5.205)
+      (pt -2.885 -5.205))))
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -7.85 -5.5)
+      (pt 7.85 -5.5)
+      (pt 7.85 5.5)
+      (pt -7.85 5.5)
+      (pt -7.85 -5.5))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.785 -5.112)
+      (pt 5.905 -5.112)
+      (pt 5.905 5.112)
+      (pt -2.785 5.112)
+      (pt -2.785 -5.112))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 5.905 -5.112)
+      (pt 6.324 -5.112)
+      (pt 7.175 -4.17)
+      (pt 7.175 4.17)
+      (pt 6.324 5.112)
+      (pt 5.905 5.112))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 0.35 -5.1)
+      (pt -4.45 -5.1)
+      (pt -4.45 5.1)
+      (pt 0.35 5.1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.25)
+     (circle
+      (pt -7.475 4.45) (pt -7.225 4.45)
+     )
+    )
+   )
+   (leg 1 (pt -6.2 3.4) (padstack 0))
+   (leg 2 (pt -6.2 1.7) (padstack 0))
+   (leg 3 (pt -6.2 0) (padstack 0))
+   (leg 4 (pt -6.2 -1.7) (padstack 0))
+   (leg 5 (pt -6.2 -3.4) (padstack 0))
+   (leg 6 (pt 4.15 0) (padstack 6))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.05 2.8 0 0 0))
+   )
+   (padstack 6
+    (plated false)
+    (pad (layer TCOP) (rectf 6.85 10.5 0 0 90))
+   )
+   (model "LM2576S-3.3_NOPB.stp"
+    (euler 90 0 -90)
+    (offset 5.869999885559082 0 0.15000000596046448)
+   )
+  )
+ )
+)

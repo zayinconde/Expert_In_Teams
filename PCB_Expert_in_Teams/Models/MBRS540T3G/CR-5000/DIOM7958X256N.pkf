@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "DIOM7958X256N"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "DIOM7958X256N")
+        (spec "default")
+    )
+)

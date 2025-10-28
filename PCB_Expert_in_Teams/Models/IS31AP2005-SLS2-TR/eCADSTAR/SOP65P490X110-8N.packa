@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "IS31AP2005-SLS2-TR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2025-02-28-14:29:48)
+    (mountForm default
+        (footprintRef "SOP65P490X110-8N")
+        (spec "System")
+    )
+)

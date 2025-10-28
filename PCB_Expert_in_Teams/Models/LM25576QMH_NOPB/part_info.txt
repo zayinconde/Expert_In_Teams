@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=LM25576QMH/NOPB
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=21
+Version=1.1
+Released=2021-04-07 13:41:11
+Downloaded=2025-10-28 15:53:48
+3D=Y

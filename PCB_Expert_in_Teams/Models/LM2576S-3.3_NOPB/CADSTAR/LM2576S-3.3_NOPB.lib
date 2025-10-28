@@ -1,0 +1,16 @@
+.LM2576S-3.3_NOPB :1 ;SIMPLE SWITCHER&#174; 40V, 3A Low Component Count Step-Down Regulator
+TO170P1435X465-6N
+*STM IC
+*NGS
+*PLB 1="VIN" 2="OUTPUT" 3="GROUND" 4="FEEDBACK" 5="'ON'/OFF" 6="GND_(TAB)"
+*MXP 6
+*DFN LM2576S-3.3_NOPB
+~!Mouser Part Number (926-LM2576S-3.3/NOPB)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2576S-3.3-NOPB?qs=X1J7HmVL2ZHgUfnXFulfHg%3D%3D)
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (LM2576S-3.3/NOPB)
+~!Link Datasheet (http://www.ti.com/lit/ds/symlink/lm2576.pdf)
+~!Height (4.65mm)
+~!3D_Model (LM2576S-3.3_NOPB)
+LM2576S-3.3_NOPB
+1.1!I 2.1!Y 3.1!U 4.1!U 5.1!U 6.1!G 

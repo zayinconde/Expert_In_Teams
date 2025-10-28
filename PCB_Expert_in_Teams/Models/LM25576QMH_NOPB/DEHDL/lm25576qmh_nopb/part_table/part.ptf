@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'LM25576QMH_NOPB'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Texas Instruments", "LM25576QMH/NOPB" (!) = "", "SOP65P640X110-21N", "Small Outline Packages", "926-LM25576QMH/NOPB", "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM25576QMH-NOPB?qs=X1J7HmVL2ZGNdbTbFc93WQ%3D%3D", "Texas Instruments, LM25576QMH/NOPB Step-Down Switching Regulator 3A Adjustable, 1.225  40 V, 20-Pin HTSSOP", "http://www.ti.com/lit/gpn/lm25576-q1", "1.1 mm"
+END_PART
+
+END.

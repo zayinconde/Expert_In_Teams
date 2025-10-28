@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IS31AP2005-SLS2-TR
+D 2.95W Mono Filter-less Class-D Audio Power Amplifier, MSOP-8 (3.0mm x 5.0mm), T&R
+K
+F https://www.lumissil.com/assets/pdf/core/IS31AP2005_DS.pdf
+$ENDCMP
+#
+#End Doc Library
