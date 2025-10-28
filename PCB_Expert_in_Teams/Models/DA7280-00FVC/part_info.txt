@@ -1,0 +1,9 @@
+Manufacturer=Renesas Electronics
+PartNumber=DA7280-00FVC
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat No-Lead
+PinCount=12
+Version=1.1
+Released=2021-05-20 10:11:24
+Downloaded=2025-10-25 15:29:49
+3D=Y

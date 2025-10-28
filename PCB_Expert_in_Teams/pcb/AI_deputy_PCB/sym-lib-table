@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DA7280-00FVC")(type "KiCad")(uri "C:/Users/zayin/OneDrive - Syddansk Universitet/Documents/KI CAD/DA7280-00FVC/KiCad/DA7280-00FVC.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32-WROOM-32UE_M113EH6400UH3Q0_")(type "KiCad")(uri "C:/Users/zayin/OneDrive - Syddansk Universitet/Documents/KI CAD/ESP32-WROOM-32UE_M113EH6400UH3Q0_/ESP32-WROOM-32UE_M113EH6400UH3Q0_.kicad_sym")(options "")(descr ""))
+)

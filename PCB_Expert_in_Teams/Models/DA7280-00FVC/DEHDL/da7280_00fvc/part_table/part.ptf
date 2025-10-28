@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'DA7280_00FVC'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Renesas Electronics", "DA7280-00FVC" (!) = "", "QFN65P300X300X84-12N", "Quad Flat No-Lead", "", "", "Motor / Motion / Ignition Controllers & Drivers Haptic Driver ICLRA/ERM Haptic Driver with Multiple Input Triggers, Integrated Waveform Memory and Wideband Support", "https://www.dialog-semiconductor.com/sites/default/files/da7280_datasheet_3v0.pdf", "0.84 mm"
+END_PART
+
+END.

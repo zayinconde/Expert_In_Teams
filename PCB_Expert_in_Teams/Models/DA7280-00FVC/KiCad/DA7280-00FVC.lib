@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model DA7280-00FVC
+#/9195600/1780402/2.50/12/4/Integrated Circuit
+DEF DA7280-00FVC IC 0 30 Y Y 1 F N
+F0 "IC" 1450 600 50 H V L CNN
+F1 "DA7280-00FVC" 1450 500 50 H V L CNN
+F2 "QFN65P300X300X84-12N" 1450 400 50 H I L CNN
+F3 "https://www.dialog-semiconductor.com/sites/default/files/da7280_datasheet_3v0.pdf" 1450 300 50 H I L CNN
+F4 "Motor / Motion / Ignition Controllers & Drivers Haptic Driver ICLRA/ERM Haptic Driver with Multiple Input Triggers, Integrated Waveform Memory and Wideband Support" 1450 200 50 H I L CNN "Description"
+F5 "0.84" 1450 100 50 H I L CNN "Height"
+F6 "" 1450 0 50 H I L CNN "Farnell Part Number"
+F7 "" 1450 -100 50 H I L CNN "Farnell Price/Stock"
+F8 "Renesas Electronics" 1450 -200 50 H I L CNN "Manufacturer_Name"
+F9 "DA7280-00FVC" 1450 -300 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X GPI_2 1 0 0 200 R 50 50 0 0 P
+X GPI_1 2 0 -100 200 R 50 50 0 0 P
+X GPI_0/_PWM 3 0 -200 200 R 50 50 0 0 P
+X VDD 4 700 -900 200 U 50 50 0 0 P
+X OUTP 5 800 -900 200 U 50 50 0 0 P
+X GND_1 6 900 -900 200 U 50 50 0 0 P
+X VDDIO 9 1600 0 200 L 50 50 0 0 P
+X OUTN 8 1600 -100 200 L 50 50 0 0 P
+X GND_2 7 1600 -200 200 L 50 50 0 0 P
+X NIRQ 12 700 600 200 D 50 50 0 0 P
+X SCL 11 800 600 200 D 50 50 0 0 P
+X SDA 10 900 600 200 D 50 50 0 0 P
+P 5 0 1 6 200 400 1400 400 1400 -700 200 -700 200 400 N
+ENDDRAW
+ENDDEF
+#
+#End Library
