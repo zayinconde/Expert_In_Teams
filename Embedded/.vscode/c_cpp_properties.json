@@ -8,9 +8,9 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/Testing & Prototyping/Expert-In-Teams/include",
-                "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/Testing & Prototyping/Expert-In-Teams/src",
-                "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/Testing & Prototyping/Expert-In-Teams/lib/src",
+                "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/include",
+                "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/src",
+                "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/lib/src",
                 "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                 "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                 "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
@@ -245,9 +245,9 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/Testing & Prototyping/Expert-In-Teams/include",
-                    "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/Testing & Prototyping/Expert-In-Teams/src",
-                    "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/Testing & Prototyping/Expert-In-Teams/lib/src",
+                    "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/include",
+                    "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/src",
+                    "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/lib/src",
                     "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                     "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                     "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",

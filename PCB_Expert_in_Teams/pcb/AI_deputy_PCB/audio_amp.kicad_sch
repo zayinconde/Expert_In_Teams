@@ -4,5 +4,13 @@
 	(generator_version "9.0")
 	(uuid "578548cf-11ac-4664-bd48-94827dc93225")
 	(paper "A4")
+	(title_block
+		(title "AI Deputy")
+		(date "2025-09-24")
+		(rev "v0.1")
+		(company "Area 42 & Albers-Online Psykologi")
+		(comment 1 "SDU")
+		(comment 2 "Expert In Teams Semester Project")
+	)
 	(lib_symbols)
 )
