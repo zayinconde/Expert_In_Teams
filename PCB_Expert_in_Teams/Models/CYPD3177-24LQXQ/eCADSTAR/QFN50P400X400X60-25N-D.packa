@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "CYPD3177-24LQXQ"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-01-25-16:40:15)
+    (mountForm default
+        (footprintRef "QFN50P400X400X60-25N-D")
+        (spec "System")
+    )
+)

@@ -620,7 +620,7 @@
     ],
     [
       "6c12c916-4a53-4193-a95b-985bc004fab5",
-      "PD and UART"
+      "PD and USBC"
     ],
     [
       "4600983a-86b8-49e8-8db6-b0ddbc3ab361",
@@ -633,6 +633,14 @@
     [
       "a945ac55-a1df-454a-a270-8f1f277a9157",
       "stepup12v"
+    ],
+    [
+      "87f65698-0461-47ba-97ee-9540500b8d33",
+      "UART"
+    ],
+    [
+      "d277dd9d-82ba-45f9-9224-97f5ede05d14",
+      "LI_Charge_IC"
     ]
   ],
   "text_variables": {}

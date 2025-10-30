@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FT231XS-R
+D FTDI Chip FT231XS-R, Interface RS232, RS422, RS485, SIE, UART 3MBd, 5 V, 20-pin, SSOP
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/824938d1687833d6997706543241551a.pdf
+$ENDCMP
+#
+#End Doc Library

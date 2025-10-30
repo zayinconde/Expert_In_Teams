@@ -1,0 +1,376 @@
+*$
+*  LM25576 - Converted for LTspice
+*****************************************************************************
+*  (C) Copyright 2013, 2017 Texas Instruments Incorporated. All rights reserved.
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warranties, either expressed
+** or implied, with respect to this model, including the warranties of 
+** merchantability or fitness for a particular purpose.  The model is
+** provided solely on an "as is" basis.  The entire risk as to its quality
+** and performance is with the customer
+*****************************************************************************
+*
+* Converted for LTspice compatibility
+* Main changes: Removed PARAMS: syntax, replaced TABLE functions with IF statements
+*
+*****************************************************************************
+*
+** Released by: WEBENCH Design Center, Texas Instruments Inc.
+* Part: LM25576	
+* Date: 26MAY2017
+* Model Type: TRANSIENT
+* Simulator: LTSPICE (converted from PSPICE)
+*
+* Model Version: Final 1.10 (LTspice conversion)
+*
+******************************************************************************
+* Model Usage Notes
+*
+* 1. Following features are been modeled 
+*	 a. VIN range from 6V to 42V
+*	 b. Adjustable operating frequency between 50kHz to 1MHz
+*	 c. Adjustable soft-start
+*	 d. Emulated current mode control architecture
+*	 e. Cycle by cycle current limit
+*	 f. Topologies supported: Buck and Inverting Buck Boost 
+*	 g. VCC current limit
+*
+* 2. Following features have not been modeled
+*	 a. SYNC, SD and PRE pins
+*	 b. Thermal characteristics
+*
+* 3. STEADY parameter: 
+*    STEADY = 0 for normal startup (default)
+*    STEADY = 1 for steady state startup
+*    Set in .param statement before subcircuit call
+*****************************************************************************
+
+.SUBCKT LM25576_TRANS VIN FB SW BST RT RAMP SYNC AGND IS SD VCC OUT SS COMP PRE PGND
++ STEADY=0
+
+E_E5         15 0 VALUE { V(SHDN) }
+E_E11         SS_INT 0 VALUE { V(SS, AGND) }
+R_RSBY         STBYON AGND  1E6 TC=0,0 
+V_V62         38 AGND 5Vdc
+E_E14         SHDN_INT AGND VALUE { V(SHDN, 0) }
+V_V9         7 0 5Vdc
+R_RSD         8 AGND  115.3k TC=0,0 
+E_E12         FB_INT 0 VALUE { V(FB, AGND) }
+E_E1         CLK 0 CLK1 0 1
+R_RVSD         VSD AGND  1E6 TC=0,0 
+R_U1_R26         U1_69 AGND  10k TC=0,0 
+X_U1_SGUVLO    BST SW U1_42 U1_GATEUVLO DRIVER_U1_SGUVLO 
+R_U1_RBOOT         BST SW  150k TC=0,0 
+X_U1_U2         PWM_INT U1_N251285 U1_22 COMP0
+R_U1_RGATE         U1_GATEUVLO AGND  1E6 TC=0,0 
+X_U1_U3         CLK U1_64 INVB0
+X_U1_U1         U1_Q U1_64 DRIVE AND2B0
+X_U1_U52         CLK U1_72 U1_Q U1_14 LATCH0 
+X_U1_U4         PWM_INT U1_REF175 U1_63 COMP0
+X_U1_U53         U1_29 U1_35 SW AGND nationalfet1ax8_lm25576 
+E_U1_BD         U1_40 SW VALUE { IF(V(UVLO) > 1 & V(U1_GATEUVLO,AGND) > 1 & V(SHDN) > 1 & V(STBY) > 1 & V(DRIVE) > 1 , V(BST,SW) , -1) }
+X_U1_U5         U1_22 U1_63 U1_72 OR2B0
+E_U1_BERSD         U1_5 AGND VALUE { IF(V(SHDN) > 0.7 , 5 , 0) }
+V_U1_V61         U1_42 AGND 5Vdc
+V_U1_VSENSE         VIN U1_29 0Vdc
+V_U1_VOFFSET         COMP U1_69 0.7Vdc
+V_U1_VCL         U1_REF175 0 2.1Vdc
+D_U1_D1         U1_35 U1_40 _D6_MOD 
+E_U1_E2         U1_N251285 0 U1_69 AGND 1
+X_U1_U51         FB COMP SS U1_5 AGND opamp3a
+Q_U1_Q1         BST U1_40 U1_35 _QMOD 
+E_E13         PWM_INT 0 VALUE { V(PWM, AGND) }
+R_RSHDN         SHDN 0  1E6 TC=0,0 
+V_V1SDN         SDN AGND 5Vdc
+C_C1         12 0  20p  TC=0,0 
+R_R4         CLK1 0  1 TC=0,0 
+D_D5         VCC BST BOOSTDIODE 
+X_STBY    SDN AGND 49 STBYON LM25576_STBY 
+E_U3_E2         U3_VSD_1 AGND VALUE { IF(V(VSD, AGND)<1, 0, 1) }
+D_U3_D2         U3_51 U3_BIAS _D 
+V_U3_V15         VCC U3_54 0Vdc
+X_U3_SVCC    U3_VSD_1 AGND U3_54 AGND REGULATOR_U3_SVCC 
+D_U3_D3         U3_47 U3_45 _D 
+E_U3_E1         U3_BIAS AGND VALUE { IF(V(VIN_INT)<5.35,0,IF(V(VIN_INT) < 9 & V(SHDN) > 0.7 , V(VIN_INT) , IF( V(VIN_INT) > 9 & V(SHDN) > 0.7 , 7.1 , 0 ))) }
+R_U3_RVSD2         52 AGND  1E6 TC=0,0 
+D_U3_D4         U3_47 U3_51 _D 
+I_U3_IREG         U3_BIAS U3_47 DC 450uAdc  
+R_U3_REG1         U3_47 U3_BIAS  20k TC=0,0 
+Q_U3_Q6         U3_N379763 U3_45 VCC _NPN 
+R_U3_R1         U3_N379763 VIN  400 TC=0,0 
+X_U3_SUVLO    U3_54 AGND VSD 52 REGULATOR_U3_SUVLO 
+E_U5_E_BSS         U5_REF AGND VALUE { IF(V(VCC,AGND) > 1.2436 & V(SHDN_INT,AGND) > 0.7 , 1.2436 , 0) }
+M_U5_M1         SS U5_VSDN AGND AGND _M           
+R_U5_RUV         U5_46 UVLO  1k TC=0,0 
+E_U5_E_BSTBY         STBY 0 VALUE { IF(V(VCC,AGND) > 6.25 & V(STBYON,AGND) > 1 , 5 , 0) }
+E_U5_EUV         U5_46 0 52 AGND 1
+R_U5_REG2         VCC AGND  100k TC=0,0 
+C_U5_CUV         UVLO 0  1.5n  TC=0,0 
+R_U5_RSS         U5_57 AGND  55.8k TC=0,0 
+Q_U5_Q1         U5_57 U5_57 U5_REF QP 
+Q_U5_Q2         SS U5_57 U5_REF QP 
+E_U5_E_BSSR         U5_VSDN AGND VALUE { IF(STEADY>0.5,0,IF(V(UVLO) < 1 , 5 , IF( V(STBY) < 1 , 5 , 0))) }
+X_SSD    SDN AGND 7 SHDN LM25576_SSD 
+G_U2_GTRACK         RAMP TRACK PGND IS 1m
+R_U2_RIS         IS PGND  50m TC=0,0 
+X_U2_U6         DRIVE U2_48 INVB0
+C_U2_CRAMP2         PWM RAMP  5p  TC=0,0 
+G_U2_BRAMP         REF5 RAMP VALUE { 25u + (V(VIN,AGND) - V(OUT,AGND))/200k }
+M_U2_M2         RAMP U2_N498608 AGND AGND _NMOD           
+V_U2_VREF5         REF5 AGND 5Vdc
+R_U2_RTRACK         TRACK RAMP  10k TC=0,0 
+E_U2_E1         U2_N498608 AGND VALUE { V(U2_48, 0) }
+X_U2_STRACK    CLK 0 TRACK PWM TRACK_RAMP_U2_STRACK 
+G_U4_G4         U4_6 U4_5 VALUE { ((V(U4_6,U4_5)*2*1.098*1E-6)/(1E6*V(RT,AGND)*135E-12+580E-9)) }
+C_U4_C1         U4_6 0  1u  TC=0,0 
+E_U4_ABM1         CLK1 0 VALUE { IF(V(VIN_INT)<3,0,V(U4_N470217)) }
+R_U4_R5         U4_6 0  1E9 TC=0,0 
+X_U4_U6         U4_7 U4_6 U4_5 COMPARATOR_0
+R_U4_R2         0 U4_7  1k TC=0,0 
+X_U4_U5         U4_5 U4_3 U4_N470217 AND_0
+C_U4_C2         U4_3 0  1u  TC=0,0 
+X_U4_U1         U4_5 U4_4 INV_0
+I_U4_IS1         AGND RT DC 1u  
+X_U4_U3         U4_4 U4_3 d_d1_0
+G_U4_G3         U4_4 U4_3 VALUE { (V(U4_4,U4_3)/(28.24*V(RT,AGND)+0.121)) }
+R_U4_R1         U4_7 U4_5  1k TC=0,0 
+Q_Q3         8 8 11 QP 
+E_E3         11 AGND VALUE { IF(V(VCC,AGND) > 1.225 , 1.225 , V(VCC,AGND)) }
+E_E4         VIN_INT 0 VALUE { V(VIN, AGND) }
+V_V11         49 AGND 5Vdc
+Q_Q4         SDN 8 11 QP 
+X_SSHDN    12 0 38 VSD LM25576_SSHDN 
+R_RSDN         15 12  1k TC=0,0
+.ENDS LM25576_TRANS
+
+*$
+.subckt DRIVER_U1_SGUVLO 1 2 3 4  
+S_U1_SGUVLO         3 4 1 2 _U1_SGUVLO
+RS_U1_SGUVLO         1 2 1G
+.MODEL         _U1_SGUVLO SW Roff=1e9 Ron=1.0 Vh=0.5 Vt=3.8
+.ends DRIVER_U1_SGUVLO
+*$
+.subckt LM25576_STBY 1 2 3 4  
+S_STBY         3 4 1 2 _STBY
+RS_STBY         1 2 1G
+.MODEL         _STBY SW Roff=1e9 Ron=1.0 Vh=0.1 Vt=1.125
+.ends LM25576_STBY
+*$
+.subckt REGULATOR_U3_SVCC 1 2 3 4  
+S_U3_SVCC         3 4 1 2 _U3_SVCC
+RS_U3_SVCC         1 2 1G
+.MODEL         _U3_SVCC SW Roff=480k Ron=96k Voff=0.2 Von=0.8
+.ends REGULATOR_U3_SVCC
+*$
+.subckt REGULATOR_U3_SUVLO 1 2 3 4  
+S_U3_SUVLO         3 4 1 2 _U3_SUVLO
+RS_U3_SUVLO         1 2 1G
+.MODEL         _U3_SUVLO SW Roff=1e9 Ron=1.0 Vh=0.125 Vt=5.225
+.ends REGULATOR_U3_SUVLO
+*$
+.subckt LM25576_SSD 1 2 3 4  
+S_SSD         3 4 1 2 _SSD
+RS_SSD         1 2 1G
+.MODEL         _SSD SW Roff=1e9 Ron=1.0 Vh=0.1 Vt=0.6
+.ends LM25576_SSD
+*$
+.subckt TRACK_RAMP_U2_STRACK 1 2 3 4  
+S_U2_STRACK         3 4 1 2 _U2_STRACK
+RS_U2_STRACK         1 2 1G
+.MODEL         _U2_STRACK SW Roff=1e9 Ron=1m Vh=0.0V Vt=1V
+.ends TRACK_RAMP_U2_STRACK
+*$
+.subckt LM25576_SSHDN 1 2 3 4  
+S_SSHDN         3 4 1 2 _SSHDN
+RS_SSHDN         1 2 1G
+.MODEL         _SSHDN SW Roff=1e9 Ron=1.0 Vh=20m Vt=2
+.ends LM25576_SSHDN
+*$
+.SUBCKT AND2B0 1 2 3
+EB1 4 0 VALUE = { IF(V(1)>1.5 & V(2)>1.5 , 3.5 , 0.3) }
+RD 4 3 1
+CD 3 0 0.087NF
+.ENDS
+*$
+.SUBCKT COMP0 1 2 3
+EB1 4 0 VALUE= {IF(V(1) > V(2) , 5V , 0) }
+RD 4 3 10
+CD 3 0 10P
+.ENDS
+*$
+.SUBCKT NATIONALFET1AX8_LM25576 10 20 40 GND
+M1   1  2  3  3  DMOS L=1U W=1U
+RD  10  1  70M
+RS  40  3  4.5M
+RG  20  2  1
+CGS  2  3  60P
+EGD 12  GND  2  1  1
+VFB 14  GND  0
+FFB  2  1  VFB  1
+CGD 13 14  130P
+R1  13  GND  1
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1
+D2  15  GND  DLIM
+.MODEL DMOS NMOS (LEVEL=3 VMAX=125K THETA=58.1M ETA=2M VTO=1.2 KP=2.89)
+.MODEL DCGD D (CJO=0.062N VJ=0.4 M=1.2)
+.MODEL DSUB D (IS=11.62N N=1.5 RS=268M BV=100 CJO=0.042N VJ=0.8 M=0.42 TT=45N)
+.MODEL DLIM D (IS=100U)
+.ENDS
+*$
+.MODEL DIODE_D1 D
+*$
+.SUBCKT Cout_start_up 2 4
+R1 2 3 0.001
+C1 3 1 4.398173010380623E-5 IC=0.0
+R3 5 4 150
+R2 2 4 2.273671357720098E7
+R4 3 26 222222.22222222222
+R6 3 7 222.22222222222223
+C5 7 1 1.3194519031141868E-6 IC=0.0
+R7 3 10 22.22222222222222
+C6 10 1 1.3194519031141868E-6 IC=0.0
+R8 3 13 2.2222222222222223
+C7 13 1 1.3194519031141868E-6 IC=0.0
+C2 26 1 1.3194519031141868E-6 IC=0.0
+R9 3 28 22222.222222222223
+C3 28 1 1.3194519031141868E-6 IC=0.0
+R10 3 29 2222.222222222222
+C4 29 1 1.3194519031141868E-6 IC=0.0
+L8 1 5 15p
+R24 1 5 0.003
+L12 5 4 1n
+.ENDS
+*$
+.SUBCKT OPAMP3A 1 3 2 4 5
+CIP 2 5 1P
+CIN 1 5 1P
+EIP 10 5 2 5 1
+RIP 10 11 26
+DIP 11 12 _D2_MOD
+.MODEL _D2_MOD D CJO=10P IS=1E-8 KF=3.1F
+VOFP 12 13 0
+EIN 16 5 1 5 1
+RIN 16 15 26
+DIN 15 14 _D2_MOD
+VOFN 13 14 0
+RIS 15 11 200
+I1 13 5 DC=10U
+CPS 15 11 3.7000N
+DINN 17 13 _D2_MOD
+VIN 17 5 0
+DINR 15 18 _D2_MOD
+VIP 4 18 DC=2
+FCP 4 5 VOFP 34
+FIBP 2 5 VOFN 12.200U
+FIBN 5 1 VOFP 12.000U
+FCN 5 4 VOFN 34
+FIP 5 19 VOFP 162.00
+FIN 5 19 VOFN 162.00
+R4 19 4 3.6MEG
+R5 19 5 3.6MEG
+C4 5 19 333.33P
+DOPM 19 22 _D2_MOD
+D6 21 19 _D2_MOD
+HOPM 22 28 VOUT 39.750K
+HONM 21 27 VOUT 38.750K
+VIPM 28 4 DC=150
+VINM 5 27 DC=150
+EOUT 9 23 19 5 1
+VOUT 23 5 0
+ROUT 9 3 20
+C5 3 5 1P
+DON 24 19 _D2_MOD
+D8 19 25 _D2_MOD
+VOP 4 25 DC=890.30M
+VON 24 5 DC=895.30M
+.ENDS
+*$
+.SUBCKT LATCH0 6 8 2 1
+EBQB   10 0 VALUE = {IF((V(8)<800M) & (V(2)>800M) , 100.000M , 10.0000)}
+EBQ    20 0 VALUE = {IF((V(6)<800M) & (V(1)>800M) , 100.000M , 10.0000)}
+RD1   10 1 100
+CD1   1 0 10P IC=10.0000
+RD2   20 2 10
+CD2   2 0 1P IC=100.000M
+.ENDS
+*$
+.SUBCKT LDCR 1 2 L=1u DCR=20m IC=0
+L1 1 INT1 {L} IC={IC}
+R1 INT1 2 {DCR}
+.ENDS LDCR
+*$
+.SUBCKT Cin 1 2 
+Ccap 1 3 2.0E-6 
+Resr 3 2 0.005
+.ENDS
+*$
+.SUBCKT D_D1_0  1 2
+D1 1 2 DD1
+.MODEL DD1 D IS=1E-011 TT=1E-09 RS=0 N=1.1
+.ENDS D_D1_0 
+*$
+.SUBCKT INV_0  IN OUT
+E1 OUT 0 VALUE {IF(V(IN)>0 , -12 , 12)}
+.ENDS
+*$
+.SUBCKT AND_0  1 2 OUT
+E1 OUT 0 VALUE {IF(V(1)>0 & V(2)>0, 3.5 , 0.3)}
+.ENDS   
+*$
+.SUBCKT COMPARATOR_0  P N Y
+E1 Y 0 VALUE {IF(V(P,N)>0,12,-12)}
+.ENDS
+*$
+.SUBCKT OR2B0 1 2 3
+EB1 4 0 Value = {if(V(1)>1.5|V(2)>1.5,3.5,0.3)}
+RD 4 3 1
+CD 3 0 0.0087NF
+.ENDS
+*$
+.SUBCKT INVB0 1  2
+EB1 3 0 Value = { if (V(1)>1.5 ,0.3,3.5)}
+RD 3 2 1
+CD 2 0 0.087NF
+.ENDS
+*$
+.SUBCKT Cout_steady_state 2 4 IC=0
+R1 2 3 0.001
+C1 3 1 3.7934242214532874E-5 IC={IC}
+R3 5 4 150
+R2 2 4 2.6361407046030115E7
+R4 3 26 222222.22222222222
+R6 3 7 222.22222222222223
+C5 7 1 1.1380272664359862E-6 IC={IC}
+R7 3 10 22.22222222222222
+C6 10 1 1.1380272664359862E-6 IC={IC}
+R8 3 13 2.2222222222222223
+C7 13 1 1.1380272664359862E-6 IC={IC}
+C2 26 1 1.1380272664359862E-6 IC={IC}
+R9 3 28 22222.222222222223
+C3 28 1 1.1380272664359862E-6 IC={IC}
+R10 3 29 2222.222222222222
+C4 29 1 1.1380272664359862E-6 IC={IC}
+L8 1 5 15p
+R24 1 5 0.003
+L12 5 4 1n
+.ENDS
+*$
+.MODEL _D6_MOD D RS=65
+*$
+.MODEL BOOSTDIODE D BV=100.00 CJO=2.667776E-11 IBV=10.000E-6 IS=2.843488E-13 M=388.7E-3 N=1.091 RS=4.21E-1 TNOM=25.0 VJ=632.1E-3
+*$
+.MODEL QP PNP
+*$
+.MODEL _QMOD NPN
+*$
+.MODEL _M NMOS KP=2000E-5 VTO=1
+*$
+.MODEL _NPN NPN
+*$
+.MODEL _NMOD NMOS KP=1 RD=10 VTO=1.5
+*$
+.MODEL _D D
+*$

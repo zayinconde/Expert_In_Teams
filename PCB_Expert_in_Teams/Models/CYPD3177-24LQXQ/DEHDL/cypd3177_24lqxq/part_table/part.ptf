@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'CYPD3177_24LQXQ'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Infineon", "CYPD3177-24LQXQ" (!) = "", "QFN50P400X400X60-25N-D", "Quad Flat No-Lead", "727-CYPD3177-24LQXQ", "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/CYPD3177-24LQXQ?qs=PzGy0jfpSMvR3aDH5AdWfA%3D%3D", "USB Interface IC USB Type-C port controller CYPD3177", "", "0.6 mm"
+END_PART
+
+END.

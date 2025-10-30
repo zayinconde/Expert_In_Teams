@@ -1,0 +1,16 @@
+.STUSB4500QTR :1 ;USB Interface IC CONDITIONING & INTERFACES
+QFN50P400X400X100-25N-D
+*STM IC
+*NGS
+*PLB 1="CC1DB" 2="CC1" 3="NC" 4="CC2" 5="CC2DB" 6="RESET" 7="SCL" 8="SDA" 9="DISCH" 10="GND" 11="ATTACH" 12="ADDR0" 13="ADDR1" 14="POWER_OK3" 15="GPIO" 16="VBUS_EN_SNK" 17="A_B_SIDE" 18="VBUS_VS_DISCH" 19="ALERT" 20="POWER_OK2" 21="VREG_1V2" 22="VSYS" 23="VREG_2V7" 24="VDD" 25="EP"
+*MXP 25
+*DFN STUSB4500QTR
+~!Mouser Part Number (511-STUSB4500QTR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STUSB4500QTR?qs=wUXugUrL1qyQbYMSzG1ujg%3D%3D)
+~!Manufacturer_Name (STMicroelectronics)
+~!Manufacturer_Part_Number (STUSB4500QTR)
+~!Link Datasheet (https://www.st.com/resource/en/datasheet/stusb4500.pdf)
+~!Height (1mm)
+~!3D_Model (STUSB4500QTR)
+STUSB4500QTR
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 18.1!U 17.1!U 16.1!U 15.1!U 14.1!U 13.1!U 25.1!U 24.1!U 23.1!U 22.1!U 21.1!U 20.1!U 19.1!U 

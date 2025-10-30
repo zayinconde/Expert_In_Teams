@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "AI Deputy")
-		(date "2025-09-24")
+		(date "2025-10-29")
 		(rev "v0.1")
 		(company "Area 42 & Albers-Online Psykologi")
 		(comment 1 "SDU")
@@ -4488,7 +4488,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN65P300X300X84-12N"
+		(property "Footprint" "EXT_AI_DEPUTY_Library:QFN65P300X300X84-12N"
 			(at 158.75 193.98 0)
 			(effects
 				(font
@@ -4703,7 +4703,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN65P300X300X84-12N"
+		(property "Footprint" "EXT_AI_DEPUTY_Library:QFN65P300X300X84-12N"
 			(at 158.75 130.48 0)
 			(effects
 				(font

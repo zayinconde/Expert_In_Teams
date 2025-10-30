@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'STUSB4500QTR'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "STMicroelectronics", "STUSB4500QTR" (!) = "", "QFN50P400X400X100-25N-D", "Quad Flat No-Lead", "511-STUSB4500QTR", "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STUSB4500QTR?qs=wUXugUrL1qyQbYMSzG1ujg%3D%3D", "USB Interface IC CONDITIONING & INTERFACES", "https://www.st.com/resource/en/datasheet/stusb4500.pdf", "1 mm"
+END_PART
+
+END.

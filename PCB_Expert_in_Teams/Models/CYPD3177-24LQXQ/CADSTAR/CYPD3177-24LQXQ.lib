@@ -1,0 +1,16 @@
+.CYPD3177-24LQXQ :1 ;USB Interface IC USB Type-C port controller CYPD3177
+QFN50P400X400X60-25N-D
+*STM IC
+*NGS
+*PLB 1="VBUS_MIN" 2="VBUS_MAX" 3="VBUS_FET_EN" 4="SAFE_PWR_EN" 5="ISNK_COARSE" 6="ISNK_FINE" 7="HPI_INT" 8="GPIO_1" 9="FAULT" 10="FLIP" 11="VDC_OUT" 12="HPI_SDA" 13="HPI_SCL" 14="CC2" 15="CC1" 16="D-" 17="D+" 18="VBUS_IN" 19="GND_1" 20="DNU1" 21="DNU2" 22="GND_2" 23="VDDD" 24="VCCD" 25="GND_3"
+*MXP 25
+*DFN CYPD3177-24LQXQ
+~!Mouser Part Number (727-CYPD3177-24LQXQ)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/CYPD3177-24LQXQ?qs=PzGy0jfpSMvR3aDH5AdWfA%3D%3D)
+~!Manufacturer_Name (Infineon)
+~!Manufacturer_Part_Number (CYPD3177-24LQXQ)
+~!Link Datasheet (-)
+~!Height (0.6mm)
+~!3D_Model (CYPD3177-24LQXQ)
+CYPD3177-24LQXQ
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 18.1!U 17.1!U 16.1!U 15.1!U 14.1!U 13.1!U 25.1!U 24.1!U 23.1!U 22.1!U 21.1!U 20.1!U 19.1!U 

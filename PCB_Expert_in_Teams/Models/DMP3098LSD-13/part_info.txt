@@ -1,0 +1,9 @@
+Manufacturer=Diodes Incorporated
+PartNumber=DMP3098LSD-13
+PartCategory=MOSFET (P-Channel)
+PackageCategory=Small Outline Packages
+PinCount=8
+Version=2.1
+Released=2023-06-28 05:26:03
+Downloaded=2025-10-29 21:18:43
+3D=Y

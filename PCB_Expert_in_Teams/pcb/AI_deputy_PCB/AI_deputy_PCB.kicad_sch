@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "AI Deputy")
-		(date "2025-09-24")
+		(date "2025-10-29")
 		(rev "v0.1")
 		(company "Area 42 & Albers-Online Psykologi")
 		(comment 1 "SDU")
@@ -3135,6 +3135,26 @@
 		)
 		(uuid "08e00a39-693e-48d5-9abd-c5e1c7113eb0")
 	)
+	(text "connect me\n"
+		(exclude_from_sim no)
+		(at 181.356 122.174 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "82eec167-1283-41c8-b949-3f459cbea3b8")
+	)
+	(text "find fitting res \nvalue for led\n"
+		(exclude_from_sim no)
+		(at 198.374 53.594 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b5980f3f-e0ed-4f2e-b8ae-2ff761cdeb1b")
+	)
 	(text_box ""
 		(exclude_from_sim no)
 		(at 69.85 165.1 0)
@@ -3623,28 +3643,6 @@
 			)
 		)
 	)
-	(global_label "VDD"
-		(shape input)
-		(at 161.29 60.96 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "075b784e-f0db-4a01-8d74-e53123c13d51")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.29 67.5738 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "EN_ESP32"
 		(shape input)
 		(at 130.81 90.17 180)
@@ -3843,6 +3841,28 @@
 			)
 		)
 	)
+	(global_label "USB_RX"
+		(shape input)
+		(at 185.42 92.71 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6c1a8344-7d24-4a5f-86e5-bd531f8a8973")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.42 82.4677 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "TDI"
 		(shape input)
 		(at 177.8 105.41 0)
@@ -3931,6 +3951,50 @@
 			)
 		)
 	)
+	(global_label "PD_INT"
+		(shape input)
+		(at 177.8 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9bcef341-7636-465b-855b-25b27e6fee05")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.1957 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USB_TX"
+		(shape input)
+		(at 190.5 96.52 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a2281afb-5f87-4851-869c-de31ae5badb5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.5 106.4599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "TDI"
 		(shape input)
 		(at 201.93 130.81 180)
@@ -4010,6 +4074,28 @@
 		(uuid "d120fbc4-2e03-4df6-b5ba-a98d9a49a2fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 246.479 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD33"
+		(shape input)
+		(at 161.29 60.96 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d7ee3fbb-9896-4853-a10f-9f8b8b90c817")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.29 69.9928 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7521,7 +7607,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "6c12c916-4a53-4193-a95b-985bc004fab5")
-		(property "Sheetname" "PD and UART"
+		(property "Sheetname" "PD and USBC"
 			(at 231.14 22.1484 0)
 			(effects
 				(font
@@ -7589,6 +7675,48 @@
 		)
 	)
 	(sheet
+		(at 125.73 16.51)
+		(size 25.4 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "87f65698-0461-47ba-97ee-9540500b8d33")
+		(property "Sheetname" "UART"
+			(at 125.73 15.7984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "UART.kicad_sch"
+			(at 125.73 34.8746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "AI_deputy_PCB"
+				(path "/3784b751-4d5b-4452-8288-14e483e1cb48"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 255.27 57.15)
 		(size 19.05 22.86)
 		(exclude_from_sim no)
@@ -7626,6 +7754,48 @@
 			(project "AI_deputy_PCB"
 				(path "/3784b751-4d5b-4452-8288-14e483e1cb48"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 21.59)
+		(size 29.21 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d277dd9d-82ba-45f9-9224-97f5ede05d14")
+		(property "Sheetname" "LI_Charge_IC"
+			(at 190.5 20.8784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LI_Charge_IC.kicad_sch"
+			(at 190.5 42.4946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "AI_deputy_PCB"
+				(path "/3784b751-4d5b-4452-8288-14e483e1cb48"
+					(page "8")
 				)
 			)
 		)

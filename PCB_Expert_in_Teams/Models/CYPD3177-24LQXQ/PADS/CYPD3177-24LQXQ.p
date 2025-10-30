@@ -1,0 +1,42 @@
+*PADS-LIBRARY-PART-TYPES-V9*
+
+CYPD3177-24LQXQ QFN50P400X400X60-25N-D I ANA 7 1 0 0 0
+TIMESTAMP 2025.10.29.20.52.48
+"Mouser Part Number" 727-CYPD3177-24LQXQ
+"Mouser Price/Stock" https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/CYPD3177-24LQXQ?qs=PzGy0jfpSMvR3aDH5AdWfA%3D%3D
+"Manufacturer_Name" Infineon
+"Manufacturer_Part_Number" CYPD3177-24LQXQ
+"Description" USB Interface IC USB Type-C port controller CYPD3177
+"Datasheet Link" 
+"Geometry.Height" 0.6mm
+GATE 1 25 0
+CYPD3177-24LQXQ
+1 0 U VBUS_MIN
+2 0 U VBUS_MAX
+3 0 U VBUS_FET_EN
+4 0 U SAFE_PWR_EN
+5 0 U ISNK_COARSE
+6 0 U ISNK_FINE
+7 0 U HPI_INT
+8 0 U GPIO_1
+9 0 U FAULT
+10 0 U FLIP
+11 0 U VDC_OUT
+12 0 U HPI_SDA
+18 0 U VBUS_IN
+17 0 U D+
+16 0 U D-
+15 0 U CC1
+14 0 U CC2
+13 0 U HPI_SCL
+25 0 U GND_3
+24 0 U VCCD
+23 0 U VDDD
+22 0 U GND_2
+21 0 U DNU2
+20 0 U DNU1
+19 0 U GND_1
+
+*END*
+*REMARK* SamacSys ECAD Model
+16632074/1780402/2.50/25/3/Integrated Circuit

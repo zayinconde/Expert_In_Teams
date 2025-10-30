@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "STUSB4500QTR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-02-01-14:06:58)
+    (mountForm default
+        (footprintRef "QFN50P400X400X100-25N-D")
+        (spec "System")
+    )
+)

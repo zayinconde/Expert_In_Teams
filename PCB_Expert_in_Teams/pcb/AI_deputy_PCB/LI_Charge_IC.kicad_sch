@@ -1,0 +1,16 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ce4fd003-b711-403d-b7eb-9062b8ce0ac6")
+	(paper "A4")
+	(title_block
+		(title "AI Deputy")
+		(date "2025-10-29")
+		(rev "v0.1")
+		(company "Area 42 & Albers-Online Psykologi")
+		(comment 1 "SDU")
+		(comment 2 "Expert In Teams Semester Project")
+	)
+	(lib_symbols)
+)

@@ -1,0 +1,16 @@
+.FT231XS-R :1 ;FTDI Chip FT231XS-R, Interface RS232, RS422, RS485, SIE, UART 3MBd, 5 V, 20-pin, SSOP
+SOP64P599X175-20N
+*STM IC
+*NGS
+*PLB 1="DTR#" 2="RTS#" 3="VCCIO" 4="RXD" 5="RI#" 6="GND_1" 7="DSR#" 8="DCD#" 9="CTS#" 10="CBUS2" 11="USBDP" 12="USBDM" 13="3V3OUT" 14="RESET#" 15="VCC" 16="GND_2" 17="CBUS1" 18="CBUS0" 19="CBUS3" 20="TXD"
+*MXP 20
+*DFN FT231XS-R
+~!Mouser Part Number (895-FT231XS-R)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/FTDI/FT231XS-R?qs=Gp1Yz1mis3WduRPsgrTbtg%3D%3D)
+~!Manufacturer_Name (FTDI Chip)
+~!Manufacturer_Part_Number (FT231XS-R)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/824938d1687833d6997706543241551a.pdf)
+~!Height (1.753mm)
+~!3D_Model (FT231XS-R)
+FT231XS-R
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 18.1!U 19.1!U 20.1!U 

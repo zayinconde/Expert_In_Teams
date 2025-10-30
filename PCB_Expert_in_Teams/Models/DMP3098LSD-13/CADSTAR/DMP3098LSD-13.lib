@@ -1,0 +1,16 @@
+.DMP3098LSD-13 :1 ;MOSFET PMOS-DUAL
+SOIC127P600X175-8N
+*STM Q
+*NGS
+*PLB 1="S1" 2="G1" 3="S2" 4="G2" 5="D2_1" 6="D2_2" 7="D1_1" 8="D1_2"
+*MXP 8
+*DFN DMP3098LSD-13
+~!Mouser Part Number (621-DMP3098LSD-13)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMP3098LSD-13?qs=oUsD4qhOtFxafARAi3NzqQ%3D%3D)
+~!Manufacturer_Name (Diodes Incorporated)
+~!Manufacturer_Part_Number (DMP3098LSD-13)
+~!Link Datasheet (https://www.diodes.com//assets/Datasheets/ds31448.pdf)
+~!Height (1.75mm)
+~!3D_Model (DMP3098LSD-13)
+DMP3098LSD-13
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

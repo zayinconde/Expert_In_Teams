@@ -1,4 +1,4 @@
-26349980572419343
+26353504092673332
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59709,6 +59709,20 @@ MODULE_ESP32-WROOM-32UE_M113EH6400UH3Q0_
 0
 59
 59
+EXT_AI_DEPUTY_Library
+MOLEX_1054500101
+
+
+0
+28
+28
+EXT_AI_DEPUTY_Library
+QFN50P400X400X100-25N-D
+QFN24-1
+Integrated Circuit
+0
+25
+25
 EXT_AI_DEPUTY_Library
 QFN65P300X300X84-12N
 QFN 3.0 x 3.0
