@@ -5157,7 +5157,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-8N"
+		(property "Footprint" "EXT_AI_DEPUTY_Library:SOIC127P600X175-8N"
 			(at 223.52 -51.74 0)
 			(effects
 				(font
@@ -5497,7 +5497,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN50P400X400X60-25N-D"
+		(property "Footprint" "EXT_AI_DEPUTY_Library:QFN50P400X400X60-25N-D"
 			(at 168.91 154.61 0)
 			(effects
 				(font
@@ -5823,7 +5823,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-8N"
+		(property "Footprint" "EXT_AI_DEPUTY_Library:SOIC127P600X175-8N"
 			(at 222.25 42.24 0)
 			(effects
 				(font
