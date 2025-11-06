@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SRP6530A_8R2M'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Bourns", "SRP6530A-8R2M" (!) = "", "INDPM7166X300N", "Inductors Precision Moulded", "", "", "Ind,7.1x6.6x3mm,8.2uH+/-20%,5A,shd", "http://www.bourns.com/docs/Product-Datasheets/SRP6530A.pdf", "3 mm"
+END_PART
+
+END.

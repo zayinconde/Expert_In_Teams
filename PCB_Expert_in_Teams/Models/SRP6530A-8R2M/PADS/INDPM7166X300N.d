@@ -1,0 +1,36 @@
+*PADS-LIBRARY-PCB-DECALS-V9*
+
+INDPM7166X300N M 0 0 0 2 4 0 2 1 0
+TIMESTAMP 2025.11.06.11.11.11
+0 0 0 0 1.27 0.127 1 0 34 "Regular <Romansim Stroke Font>"
+REF-DES
+0 0 0 0 1.27 0.127 1 32 35 "Regular <Romansim Stroke Font>"
+PART-TYPE
+CLOSED 5 0.05 20 -1
+-4.45 3.7
+4.45 3.7
+4.45 -3.7
+-4.45 -3.7
+-4.45 3.7
+CLOSED 5 0.1 27 -1
+-3.55 3.3
+3.55 3.3
+3.55 -3.3
+-3.55 -3.3
+-3.55 3.3
+OPEN 2 0.2 26 -1
+3.55 3.3
+-3.55 3.3
+OPEN 2 0.2 26 -1
+-3.55 -3.3
+3.55 -3.3
+T-2.8 0 -2.8 0 1
+T2.8 0 2.8 0 2
+PAD 0 3 N 0
+-2 2.8 RF 0 90 3.2 0
+-1 0 R
+0 0 R
+
+*END*
+*REMARK* AP
+SRP6530A-8R2M.stp/0/0/0/0/0/0

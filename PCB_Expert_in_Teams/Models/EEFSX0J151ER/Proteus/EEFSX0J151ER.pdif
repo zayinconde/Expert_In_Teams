@@ -1,0 +1,125 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "EEFSX0J151ER"
+   (description "Cap Aluminum Polymer 150uF 6.3VDC 20% (7.3 X 4.3 X 1.9mm) SMD 0.009 Ohm 6300mA 2000h 105C T/R")
+   (family "CAP")
+   (package "SX_Package")
+   (attribute "Datasheet Link" "http://industrial.panasonic.com/cdbs/www-data/pdf/ABE0000/ABE0000C79.pdf")
+   (attribute "Farnell Part Number" "")
+   (attribute "Farnell Price/Stock" "")
+   (attribute "Manufacturer_Name" "Panasonic")
+   (attribute "Manufacturer_Part_Number" "EEFSX0J151ER")
+   (gate
+    (symbol "EEFSX0J151ER")
+    (pin "+" 1 PS)
+    (pin "-" 2 PS)
+   )
+  )
+  (symbol "EEFSX0J151ER"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 200 -100) (pt 230 -100) (pt 230 100) (pt 200 100) (closed))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 180 50) (pt 140 50))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 160 70) (pt 160 30))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 100 0) (pt 200 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 0) (pt 400 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt 300 100) (pt 300 -100) (pt 270 -100) (pt 270 100) (pt 300 100))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 500 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SX_Package"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.65 2.15)
+      (pt 3.65 2.15)
+      (pt 3.65 -2.15)
+      (pt -3.65 -2.15)
+      (pt -3.65 2.15))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.65 2.15)
+      (pt 3.65 2.15))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 3.65 -2.15)
+      (pt -3.65 -2.15))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (circle
+      (pt 5.3 0) (pt 5.4 0)
+     )
+    )
+   )
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -5.4 3.35)
+      (pt 6.45 3.35)
+      (pt 6.45 -3.35)
+      (pt -5.4 -3.35)
+      (pt -5.4 3.35))))
+   (leg 1 (pt 3.2 0) (padstack 0))
+   (leg 2 (pt -3.2 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 2.4 2.8 0 0 90))
+   )
+   (model "EEFSX0J151ER.stp"
+    (euler 0 0 0)
+    (offset -5.110000133514404 -2.5999999046325684 0.05000000074505806)
+   )
+  )
+ )
+)

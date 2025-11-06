@@ -1566,12 +1566,6 @@
 		(uuid "d6a20e4a-87a4-4a07-b279-1bad23132600")
 	)
 	(junction
-		(at 208.28 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0672fefe-3a4d-4dcb-a018-8a6a438661b7")
-	)
-	(junction
 		(at 226.06 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1648,6 +1642,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc0522c4-a0e7-4660-9c18-516bb744b11c")
+	)
+	(junction
+		(at 208.28 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7bb3503-0fa7-4474-885e-5a02b8ba8ddc")
 	)
 	(junction
 		(at 90.17 83.82)
@@ -2233,7 +2233,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fc34e4b9-1bf4-48fc-ab84-c495ae5b3ff4")
+		(uuid "fbb46971-15bf-4770-884f-12304dce2ece")
 	)
 	(global_label "VIN"
 		(shape input)
@@ -3041,7 +3041,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EXT_AI_DEPUTY_Library:SX_Package"
 			(at 208.28 81.28 0)
 			(effects
 				(font
@@ -3050,7 +3050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.farnell.com/datasheets/4379350.pdf"
 			(at 208.28 81.28 0)
 			(effects
 				(font
@@ -3109,7 +3109,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EXT_AI_DEPUTY_Library:INDPM7166X300N"
 			(at 200.66 77.47 0)
 			(effects
 				(font
@@ -3118,7 +3118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://docs.rs-online.com/542b/A700000008249143.pdf"
 			(at 200.66 77.47 0)
 			(effects
 				(font
@@ -3453,7 +3453,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P640X110-21N"
+		(property "Footprint" "EXT_AI_DEPUTY_Library:SOP65P640X110-21N"
 			(at 165.1 171.12 0)
 			(effects
 				(font
@@ -4424,7 +4424,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EXT_AI_DEPUTY_Library:T520D"
 			(at 72.39 87.63 0)
 			(effects
 				(font
@@ -4433,7 +4433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.dk/datasheet/3/508/1/KEM_T2076_T52X_530.pdf"
 			(at 72.39 87.63 0)
 			(effects
 				(font

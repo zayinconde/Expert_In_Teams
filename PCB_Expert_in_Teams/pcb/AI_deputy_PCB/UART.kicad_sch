@@ -2060,7 +2060,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOP64P599X175-20N"
+		(property "Footprint" "EXT_AI_DEPUTY_Library:SOP64P599X175-20N"
 			(at 161.29 155.88 0)
 			(effects
 				(font

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'EEFSX0J151ER'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Panasonic", "EEFSX0J151ER" (!) = "", "SX_Package", "Other", "", "", "Cap Aluminum Polymer 150uF 6.3VDC 20% (7.3 X 4.3 X 1.9mm) SMD 0.009 Ohm 6300mA 2000h 105C T/R", "http://industrial.panasonic.com/cdbs/www-data/pdf/ABE0000/ABE0000C79.pdf"
+END_PART
+
+END.

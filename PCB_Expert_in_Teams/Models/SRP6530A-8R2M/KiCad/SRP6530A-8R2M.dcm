@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SRP6530A-8R2M
+D Ind,7.1x6.6x3mm,8.2uH+/-20%,5A,shd
+K
+F http://www.bourns.com/docs/Product-Datasheets/SRP6530A.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'T520D686M016ATE050'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "KEMET", "T520D686M016ATE050" (!) = "", "T520D", "Other", "80-T520D686M16ATE50", "https://www.mouser.co.uk/ProductDetail/KEMET/T520D686M016ATE050?qs=QXs58j9tPLul3J3qFuuGCw%3D%3D", "T520, Tantalum, Polymer Tantalum, Commercial Grade, 68 uF, 20%, 16 VDC, 105C, -55C, 105C, SMD, Polymer, Molded, Low ESR, Non-Combustible, 2,000 Hrs, 10 % , 50 mOhms, 108.8 uA, 434.83 mg, 7343, 2.8mm, Height Max = 3.1mm, 500, 52  Weeks", "https://content.kemet.com/datasheets/KEM_T2076_T52X-530.pdf", "3.1 mm"
+END_PART
+
+END.

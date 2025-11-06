@@ -1,0 +1,9 @@
+Manufacturer=KEMET
+PartNumber=T520D686M016ATE050
+PartCategory=Capacitor
+PackageCategory=Other
+PinCount=2
+Version=6.1
+Released=2023-03-07 11:13:37
+Downloaded=2025-11-06 11:43:38
+3D=Y

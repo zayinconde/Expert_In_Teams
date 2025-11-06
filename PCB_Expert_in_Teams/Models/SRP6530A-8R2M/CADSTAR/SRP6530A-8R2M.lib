@@ -1,0 +1,16 @@
+.SRP6530A-8R2M :1 ;Ind,7.1x6.6x3mm,8.2uH+/-20%,5A,shd
+INDPM7166X300N
+*STM L
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN SRP6530A-8R2M
+~!Farnell Part Number (-)
+~!Farnell Price/Stock (-)
+~!Manufacturer_Name (Bourns)
+~!Manufacturer_Part_Number (SRP6530A-8R2M)
+~!Link Datasheet (http://www.bourns.com/docs/Product-Datasheets/SRP6530A.pdf)
+~!Height (3mm)
+~!3D_Model (SRP6530A-8R2M)
+SRP6530A-8R2M
+1.1!U 2.1!U 

@@ -1,0 +1,16 @@
+.T520D686M016ATE050 :1 ;T520, Tantalum, Polymer Tantalum, Commercial Grade, 68 uF, 20%, 16 VDC, 105C, -55C, 105C, SMD, Polymer, Molded, Low ESR, Non-Combustible, 2,000 Hrs, 10 % , 50 mOhms, 108.8 uA, 434.83 mg, 7343, 2.8mm, Height Max = 3.1mm, 500, 52  Weeks
+T520D
+*STM C
+*NGS
+*PLB 1="+" 2="-"
+*MXP 2
+*DFN T520D686M016ATE050
+~!Mouser Part Number (80-T520D686M16ATE50)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/KEMET/T520D686M016ATE050?qs=QXs58j9tPLul3J3qFuuGCw%3D%3D)
+~!Manufacturer_Name (KEMET)
+~!Manufacturer_Part_Number (T520D686M016ATE050)
+~!Link Datasheet (https://content.kemet.com/datasheets/KEM_T2076_T52X-530.pdf)
+~!Height (3.1mm)
+~!3D_Model (T520D686M016ATE050)
+T520D686M016ATE050
+1.1!U 2.1!U 

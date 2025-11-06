@@ -12,4 +12,7 @@
   (lib (name "CYPD3177-24LQXQ")(type "KiCad")(uri "${EXT_PROJECT}/CYPD3177-24LQXQ/KiCad/CYPD3177-24LQXQ.kicad_sym")(options "")(descr ""))
   (lib (name "DMP3098LSD")(type "KiCad")(uri "${EXT_PROJECT}/DMP3098LSD-13/KiCad/DMP3098LSD-13.kicad_sym")(options "")(descr ""))
   (lib (name "FT231XS-R")(type "KiCad")(uri "${EXT_PROJECT}/FT231XS-R/KiCad/FT231XS-R.kicad_sym")(options "")(descr ""))
+  (lib (name "EEFSX0J151ER")(type "KiCad")(uri "${EXT_PROJECT}/EEFSX0J151ER/KiCad/EEFSX0J151ER.kicad_sym")(options "")(descr ""))
+  (lib (name "SRP6530A-8R2M")(type "KiCad")(uri "${EXT_PROJECT}/SRP6530A-8R2M/KiCad/SRP6530A-8R2M.kicad_sym")(options "")(descr ""))
+  (lib (name "T520D686M016ATE050")(type "KiCad")(uri "${EXT_PROJECT}/T520D686M016ATE050/KiCad/T520D686M016ATE050.kicad_sym")(options "")(descr ""))
 )

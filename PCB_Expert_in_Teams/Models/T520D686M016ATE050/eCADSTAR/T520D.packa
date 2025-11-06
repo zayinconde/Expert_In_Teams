@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "T520D686M016ATE050"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-05-10-08:51:31)
+    (mountForm default
+        (footprintRef "T520D")
+        (spec "System")
+    )
+)

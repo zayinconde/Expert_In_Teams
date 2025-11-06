@@ -1,0 +1,16 @@
+.EEFSX0J151ER :1 ;Cap Aluminum Polymer 150uF 6.3VDC 20% (7.3 X 4.3 X 1.9mm) SMD 0.009 Ohm 6300mA 2000h 105C T/R
+SX_Package
+*STM C
+*NGS
+*PLB 1="+" 2="-"
+*MXP 2
+*DFN EEFSX0J151ER
+~!Farnell Part Number (-)
+~!Farnell Price/Stock (-)
+~!Manufacturer_Name (Panasonic)
+~!Manufacturer_Part_Number (EEFSX0J151ER)
+~!Link Datasheet (http://industrial.panasonic.com/cdbs/www-data/pdf/ABE0000/ABE0000C79.pdf)
+~!Height (-)
+~!3D_Model (EEFSX0J151ER)
+EEFSX0J151ER
+1.1!U 2.1!U 

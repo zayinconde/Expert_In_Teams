@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EEFSX0J151ER
+D Cap Aluminum Polymer 150uF 6.3VDC 20% (7.3 X 4.3 X 1.9mm) SMD 0.009 Ohm 6300mA 2000h 105C T/R
+K
+F http://industrial.panasonic.com/cdbs/www-data/pdf/ABE0000/ABE0000C79.pdf
+$ENDCMP
+#
+#End Doc Library

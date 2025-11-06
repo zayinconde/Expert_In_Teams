@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "EEFSX0J151ER"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-07-14-16:31:17)
+    (mountForm default
+        (footprintRef "SX_Package")
+        (spec "System")
+    )
+)

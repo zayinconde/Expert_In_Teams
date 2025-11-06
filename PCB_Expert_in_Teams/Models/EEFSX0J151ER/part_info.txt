@@ -1,0 +1,9 @@
+Manufacturer=Panasonic
+PartNumber=EEFSX0J151ER
+PartCategory=Capacitor Polarised
+PackageCategory=Other
+PinCount=2
+Version=5.1
+Released=2021-07-14 16:31:17
+Downloaded=2025-11-06 11:34:21
+3D=Y

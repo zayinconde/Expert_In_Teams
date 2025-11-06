@@ -1,0 +1,9 @@
+Manufacturer=Bourns
+PartNumber=SRP6530A-8R2M
+PartCategory=Inductor
+PackageCategory=Inductors Precision Moulded
+PinCount=2
+Version=2.1
+Released=2021-08-07 03:34:02
+Downloaded=2025-11-06 11:35:11
+3D=Y

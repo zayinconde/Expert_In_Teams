@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "SRP6530A-8R2M"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-08-07-03:34:02)
+    (mountForm default
+        (footprintRef "INDPM7166X300N")
+        (spec "System")
+    )
+)
