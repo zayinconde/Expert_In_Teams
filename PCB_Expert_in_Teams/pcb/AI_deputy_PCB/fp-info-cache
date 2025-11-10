@@ -1,4 +1,4 @@
-26364078662239916
+26369366816907341
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59689,6 +59689,13 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 10
 10
 EXT_AI_DEPUTY_Library
+430773034825
+
+
+0
+4
+4
+EXT_AI_DEPUTY_Library
 ABM810000MHZ12D2W
 ABM8
 Crystal or Oscillator
@@ -59716,6 +59723,13 @@ MODULE_ESP32-WROOM-32UE_M113EH6400UH3Q0_
 0
 59
 59
+EXT_AI_DEPUTY_Library
+MOLEX_2171790001
+
+
+0
+16
+16
 EXT_AI_DEPUTY_Library
 MOLEX_1054500101
 
@@ -59772,6 +59786,13 @@ Integrated Circuit
 0
 21
 21
+EXT_AI_DEPUTY_Library
+SOP65P640X120-20N
+PW (R-PDSO-G20)
+Integrated Circuit
+0
+20
+20
 EXT_AI_DEPUTY_Library
 SX_Package
 SX_Package

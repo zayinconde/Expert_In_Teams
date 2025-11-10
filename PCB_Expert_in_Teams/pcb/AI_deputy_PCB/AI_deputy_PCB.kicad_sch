@@ -2599,31 +2599,42 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_DPST_x2"
+		(symbol "Wurth Buttons:430773034825"
 			(pin_names
-				(offset 0)
-				(hide yes)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 3.175 0)
+			(property "Reference" "S"
+				(at 0 5.842 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 				)
 			)
-			(property "Value" "SW_DPST_x2"
-				(at 0 -2.54 0)
+			(property "Value" "430773034825"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "430773034825:430773034825"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2632,7 +2643,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2641,30 +2652,93 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
+			(property "MF" "Würth Elektronik"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch lever"
+			(property "Description_1" "Tactile Switch SPST-NO Top Actuated Surface Mount"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(symbol "SW_DPST_x2_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/430773034825/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "430773034825"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/430773034825/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "430773034825_0_0"
+				(polyline
+					(pts
+						(xy 0 5.08) (xy -2.54 5.08)
+					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -2673,10 +2747,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.254) (xy 1.524 1.778)
+						(xy 0 3.175) (xy 0 5.08)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -2684,88 +2758,155 @@
 					)
 				)
 				(circle
-					(center 2.032 0)
+					(center 0 2.54)
 					(radius 0.508)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "SW_DPST_x2_1_1"
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.47 2.74) (xy 1.04 -0.07)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy 0 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 5.08 0)
 					(length 2.54)
-					(name "A"
+					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 -2.54 0)
 					(length 2.54)
-					(name "B"
+					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "SW_DPST_x2_2_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "3"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 5.08 180)
 					(length 2.54)
-					(name "B"
+					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "4"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -3135,16 +3276,6 @@
 		)
 		(uuid "08e00a39-693e-48d5-9abd-c5e1c7113eb0")
 	)
-	(text "connect me\n"
-		(exclude_from_sim no)
-		(at 181.356 122.174 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "82eec167-1283-41c8-b949-3f459cbea3b8")
-	)
 	(text "find fitting res \nvalue for led\n"
 		(exclude_from_sim no)
 		(at 198.374 53.594 0)
@@ -3236,10 +3367,22 @@
 		(uuid "e22dd6cb-c881-4f59-b930-68738417bd03")
 	)
 	(junction
+		(at 177.8 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f09d765-efa1-4b13-8afe-7646a25bf78f")
+	)
+	(junction
 		(at 123.19 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18b38d1d-132e-48ec-8dfe-da16a8db943f")
+	)
+	(junction
+		(at 34.29 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2041c473-3c4a-4f37-9162-b0e06c584168")
 	)
 	(junction
 		(at 137.16 53.34)
@@ -3248,10 +3391,28 @@
 		(uuid "306a5ebd-f2ce-44d4-8918-7b299a2391f7")
 	)
 	(junction
+		(at 40.64 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46cd77fc-0a66-446d-8277-a6a66c89f555")
+	)
+	(junction
 		(at 43.18 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "480c9da6-d69b-4f01-a4f3-35ceed900733")
+	)
+	(junction
+		(at 96.52 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7072d501-3b42-40aa-99f4-de5f4e4f3d72")
+	)
+	(junction
+		(at 53.34 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7908ee5b-5ea2-43c7-ace4-c00eae6646bd")
 	)
 	(junction
 		(at 53.34 168.91)
@@ -3260,16 +3421,16 @@
 		(uuid "80ed67b4-ebbe-4485-ad81-3e06cc141b3f")
 	)
 	(junction
-		(at 172.72 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5eebf58-762c-4c82-aeb0-dcf60e54bde0")
-	)
-	(junction
 		(at 149.86 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac69e420-7b7e-497b-a096-54dcf46d2b93")
+	)
+	(junction
+		(at 85.09 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1dc2905-d794-44c9-a7a2-b0a717a43ba2")
 	)
 	(junction
 		(at 162.56 53.34)
@@ -3285,6 +3446,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 139.7) (xy 53.34 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05a2242a-f098-49bf-9f7e-f17cc92ae3e5")
+	)
+	(wire
+		(pts
 			(xy 53.34 168.91) (xy 53.34 173.99)
 		)
 		(stroke
@@ -3292,16 +3463,6 @@
 			(type default)
 		)
 		(uuid "0a6281d9-47fe-4fd0-af8e-680f55008935")
-	)
-	(wire
-		(pts
-			(xy 52.07 134.62) (xy 57.15 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d166b6a-fcfd-4ce0-b77a-e65b83dca86e")
 	)
 	(wire
 		(pts
@@ -3325,6 +3486,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 129.54) (xy 53.34 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15808caf-4b0b-47c5-9939-f62e1c42c2fc")
+	)
+	(wire
+		(pts
 			(xy 123.19 52.07) (xy 123.19 53.34)
 		)
 		(stroke
@@ -3332,16 +3503,6 @@
 			(type default)
 		)
 		(uuid "184c4a18-cc61-4dca-9c6e-5f4c12a41dab")
-	)
-	(wire
-		(pts
-			(xy 34.29 133.35) (xy 34.29 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1aa269a2-19b3-41ca-ac7e-b5ffaee6ced8")
 	)
 	(wire
 		(pts
@@ -3395,6 +3556,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 175.26) (xy 85.09 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2db4b401-0016-41a1-ad58-93dd050ce66f")
+	)
+	(wire
+		(pts
 			(xy 171.45 76.2) (xy 146.05 76.2)
 		)
 		(stroke
@@ -3425,13 +3596,43 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 105.41) (xy 161.29 105.41)
+			(xy 161.29 105.41) (xy 177.8 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "56599add-70e0-4d1f-914c-187901f00f6b")
+	)
+	(wire
+		(pts
+			(xy 85.09 175.26) (xy 87.63 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "596d5d19-1ca5-4c89-a4e8-7d70f2be4dad")
+	)
+	(wire
+		(pts
+			(xy 96.52 185.42) (xy 96.52 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "605baaa2-9708-46c1-b9f6-6ade5e16bbc7")
+	)
+	(wire
+		(pts
+			(xy 95.25 185.42) (xy 96.52 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63d1d304-bcb2-41ed-97c6-eb99c76b25ff")
 	)
 	(wire
 		(pts
@@ -3455,6 +3656,36 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 180.34) (xy 86.36 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72c2c7c3-252e-4fd4-b210-f3cf47442c80")
+	)
+	(wire
+		(pts
+			(xy 40.64 139.7) (xy 40.64 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "766dba92-84a3-4e53-bdc9-eae3864639ae")
+	)
+	(wire
+		(pts
+			(xy 85.09 185.42) (xy 85.09 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e7e4088-64ff-43bf-9bc3-b40dfe236495")
+	)
+	(wire
+		(pts
 			(xy 82.55 179.07) (xy 82.55 180.34)
 		)
 		(stroke
@@ -3462,6 +3693,26 @@
 			(type default)
 		)
 		(uuid "85529ced-9985-41fa-82f1-6de63e2c63c1")
+	)
+	(wire
+		(pts
+			(xy 96.52 175.26) (xy 96.52 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87db7cf6-de98-40b0-a405-a802462a6c80")
+	)
+	(wire
+		(pts
+			(xy 34.29 134.62) (xy 34.29 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8950fb78-c463-4e55-8691-2b22a96420e2")
 	)
 	(wire
 		(pts
@@ -3485,7 +3736,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 134.62) (xy 41.91 134.62)
+			(xy 31.75 134.62) (xy 34.29 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3515,7 +3766,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 105.41) (xy 172.72 105.41)
+			(xy 180.34 105.41) (xy 177.8 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3535,7 +3786,37 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 180.34) (xy 86.36 180.34)
+			(xy 40.64 129.54) (xy 43.18 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab199946-ecd0-4141-81b5-6aaab7b4af99")
+	)
+	(wire
+		(pts
+			(xy 85.09 185.42) (xy 87.63 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeae4a0d-b081-4fd5-9410-9f255b244faa")
+	)
+	(wire
+		(pts
+			(xy 40.64 134.62) (xy 40.64 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b817355f-3dad-44f4-8155-c12b72cd64d2")
+	)
+	(wire
+		(pts
+			(xy 82.55 180.34) (xy 85.09 180.34)
 		)
 		(stroke
 			(width 0)
@@ -3552,6 +3833,26 @@
 			(type default)
 		)
 		(uuid "c7c27a8c-57be-4985-93bd-88e0fca4cd51")
+	)
+	(wire
+		(pts
+			(xy 50.8 129.54) (xy 53.34 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd7c540b-4975-4285-94dc-c91bdaafa3e3")
+	)
+	(wire
+		(pts
+			(xy 43.18 139.7) (xy 40.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2844e1b-bd19-4806-9318-30cbac270658")
 	)
 	(wire
 		(pts
@@ -3575,6 +3876,46 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 175.26) (xy 96.52 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc3ed1e9-11df-42bc-bbe6-66150ebfbd54")
+	)
+	(wire
+		(pts
+			(xy 34.29 133.35) (xy 34.29 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddf41d9d-d3a0-4b7c-9bfe-0a19cd1e0048")
+	)
+	(wire
+		(pts
+			(xy 50.8 139.7) (xy 53.34 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7acec6a-921a-45ee-8c8d-f63fad029b84")
+	)
+	(wire
+		(pts
+			(xy 53.34 134.62) (xy 57.15 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecde769c-0b27-4790-b652-36434ec438f4")
+	)
+	(wire
+		(pts
 			(xy 38.1 179.07) (xy 43.18 179.07)
 		)
 		(stroke
@@ -3582,6 +3923,16 @@
 			(type default)
 		)
 		(uuid "f0cbcb40-4381-41e0-954f-e7da7dd8952e")
+	)
+	(wire
+		(pts
+			(xy 34.29 134.62) (xy 40.64 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7aa111d-45e7-47a9-91d3-dc21992c55a9")
 	)
 	(wire
 		(pts
@@ -3648,6 +3999,28 @@
 		(uuid "02792292-1a2d-4540-a43d-334d5397b807")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 176.0678 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DAC_LRCK"
+		(shape input)
+		(at 161.29 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "042a1477-9ebb-4f7c-b542-491ff1eaf1ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.7095 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3879,7 +4252,7 @@
 	)
 	(global_label "TDI"
 		(shape input)
-		(at 177.8 105.41 0)
+		(at 180.34 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3889,7 +4262,7 @@
 		)
 		(uuid "7ba1c8ea-6338-4e5e-ace0-91c8f7d396a0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.6276 105.41 0)
+			(at 186.1676 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3967,7 +4340,7 @@
 	)
 	(global_label "PD_INT"
 		(shape input)
-		(at 177.8 125.73 0)
+		(at 161.29 123.19 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3977,7 +4350,7 @@
 		)
 		(uuid "9bcef341-7636-465b-855b-25b27e6fee05")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.1957 125.73 0)
+			(at 170.6857 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4049,6 +4422,72 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DAC_DIN"
+		(shape input)
+		(at 161.29 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b784d561-f8c0-48f0-abab-ac9789c938e1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.0767 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUTE"
+		(shape input)
+		(at 161.29 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bb1cfeda-7a73-4356-b6f7-8e787c86fbf2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 169.1737 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DAC_BCK"
+		(shape input)
+		(at 161.29 120.65 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c036e9c4-eead-443e-b0d4-874d8d0b660c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.6814 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4249,6 +4688,162 @@
 			(project "AI_deputy_PCB"
 				(path "/3784b751-4d5b-4452-8288-14e483e1cb48"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wurth Buttons:430773034825")
+		(at 92.71 180.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08470f01-8e21-44e5-abf6-d676878e4a33")
+		(property "Reference" "S1"
+			(at 90.17 171.196 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "430773034825"
+			(at 85.598 173.228 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "EXT_AI_DEPUTY_Library:430773034825"
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Würth Elektronik"
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Tactile Switch SPST-NO Top Actuated Surface Mount"
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/430773034825/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=snap"
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "430773034825"
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/430773034825/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=eda"
+			(at 92.71 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f2ef8240-7827-4652-8497-2d595d898e13")
+		)
+		(pin "1"
+			(uuid "c277253a-b496-47ee-90fc-9bba56d6872a")
+		)
+		(pin "4"
+			(uuid "817c4efa-2558-4fb0-b6e2-45dfea1fbb78")
+		)
+		(pin "3"
+			(uuid "14f58172-034d-4b60-ac84-c948aff0d52e")
+		)
+		(instances
+			(project ""
+				(path "/3784b751-4d5b-4452-8288-14e483e1cb48"
+					(reference "S1")
 					(unit 1)
 				)
 			)
@@ -4594,80 +5189,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 46.99 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2ed9c89b-3b0f-4dc7-92a9-5abf10219837")
-		(property "Reference" "SW2"
-			(at 46.99 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RESET SWITCH"
-			(at 46.99 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.99 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
-			(at 46.99 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "08d1de79-a05e-44de-b8b0-5ad92d55a5b6")
-		)
-		(pin "3"
-			(uuid "e16a6050-a2de-4cc9-8fc5-171f7c7b484a")
-		)
-		(pin "2"
-			(uuid "ceeee5e9-7f26-4bc3-b6e4-c571e19a7043")
-		)
-		(pin "4"
-			(uuid "fd24cae8-92b9-43c4-afa2-3084c26a3b8f")
-		)
-		(instances
-			(project "AI_deputy_PCB"
-				(path "/3784b751-4d5b-4452-8288-14e483e1cb48"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 97.79 180.34 0)
 		(unit 1)
@@ -4675,7 +5196,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2f586db2-48cd-4225-8b2d-9b1d2118eeb8")
 		(property "Reference" "#PWR09"
 			(at 97.79 186.69 0)
@@ -4687,7 +5207,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 97.79 185.42 0)
+			(at 95.758 186.944 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4932,6 +5452,162 @@
 			(project "AI_deputy_PCB"
 				(path "/3784b751-4d5b-4452-8288-14e483e1cb48"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Wurth Buttons:430773034825")
+		(at 48.26 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "39df1650-1f0d-4a2f-84c6-0dcb77c61fa5")
+		(property "Reference" "S2"
+			(at 45.974 125.222 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "430773034825"
+			(at 39.624 127.762 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "EXT_AI_DEPUTY_Library:430773034825"
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Würth Elektronik"
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Tactile Switch SPST-NO Top Actuated Surface Mount"
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/430773034825/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=snap"
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "430773034825"
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/430773034825/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=eda"
+			(at 48.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ef017084-134b-4e22-8da5-dafe7e8da3ea")
+		)
+		(pin "2"
+			(uuid "f556ef4e-dcfb-4d53-956a-ef15595d8cac")
+		)
+		(pin "1"
+			(uuid "2b7711f1-596d-438d-9c9c-71821821185d")
+		)
+		(pin "4"
+			(uuid "7709a46c-065f-49c2-9bf8-f0e4db1ec71d")
+		)
+		(instances
+			(project ""
+				(path "/3784b751-4d5b-4452-8288-14e483e1cb48"
+					(reference "S2")
 					(unit 1)
 				)
 			)
@@ -5187,7 +5863,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 172.72 109.22 0)
+		(at 177.8 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5196,7 +5872,7 @@
 		(fields_autoplaced yes)
 		(uuid "48912a32-10b3-409c-8e7c-864a40647a1e")
 		(property "Reference" "R7"
-			(at 175.26 107.9499 0)
+			(at 180.34 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5205,7 +5881,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 175.26 110.4899 0)
+			(at 180.34 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5214,7 +5890,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 170.942 109.22 90)
+			(at 176.022 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5223,7 +5899,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 109.22 0)
+			(at 177.8 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5232,7 +5908,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 172.72 109.22 0)
+			(at 177.8 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5393,7 +6069,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 172.72 113.03 0)
+		(at 177.8 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5402,7 +6078,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d2693ef-8a04-4949-9020-8524376b2f5f")
 		(property "Reference" "#PWR07"
-			(at 172.72 119.38 0)
+			(at 177.8 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5411,7 +6087,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 172.72 118.11 0)
+			(at 177.8 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5419,7 +6095,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 113.03 0)
+			(at 177.8 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5428,7 +6104,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 113.03 0)
+			(at 177.8 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5437,7 +6113,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 113.03 0)
+			(at 177.8 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7109,80 +7785,6 @@
 			(project "AI_deputy_PCB"
 				(path "/3784b751-4d5b-4452-8288-14e483e1cb48"
 					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 91.44 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e36578b5-0e34-4796-b5aa-2ff00c48f70c")
-		(property "Reference" "SW1"
-			(at 91.44 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BOOT SWITCH"
-			(at 91.44 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
-			(at 91.44 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7fff3908-03e9-4dd1-a955-f30dc74afec0")
-		)
-		(pin "3"
-			(uuid "e16a6050-a2de-4cc9-8fc5-171f7c7b484b")
-		)
-		(pin "2"
-			(uuid "26028236-ef32-460d-ad1b-d4513f3e8900")
-		)
-		(pin "4"
-			(uuid "fd24cae8-92b9-43c4-afa2-3084c26a3b90")
-		)
-		(instances
-			(project ""
-				(path "/3784b751-4d5b-4452-8288-14e483e1cb48"
-					(reference "SW1")
 					(unit 1)
 				)
 			)

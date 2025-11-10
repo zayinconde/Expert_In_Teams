@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=PCM5102APWR
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=20
+Version=3.1
+Released=2017-03-20 09:41:11
+Downloaded=2025-11-09 21:16:44
+3D=Y

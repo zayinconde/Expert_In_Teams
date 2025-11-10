@@ -15,4 +15,7 @@
   (lib (name "EEFSX0J151ER")(type "KiCad")(uri "${EXT_PROJECT}/EEFSX0J151ER/KiCad/EEFSX0J151ER.kicad_sym")(options "")(descr ""))
   (lib (name "SRP6530A-8R2M")(type "KiCad")(uri "${EXT_PROJECT}/SRP6530A-8R2M/KiCad/SRP6530A-8R2M.kicad_sym")(options "")(descr ""))
   (lib (name "T520D686M016ATE050")(type "KiCad")(uri "${EXT_PROJECT}/T520D686M016ATE050/KiCad/T520D686M016ATE050.kicad_sym")(options "")(descr ""))
+  (lib (name "USBC-2.0-16p-molex-217179")(type "KiCad")(uri "${EXT_PROJECT}/USBC_16p_2.0_217179-0001/2171790001.kicad_sym")(options "")(descr ""))
+  (lib (name "Wurth Buttons")(type "KiCad")(uri "${EXT_PROJECT}/Wurth Buttons/430773034825.kicad_sym")(options "")(descr ""))
+  (lib (name "DAC-PCM510")(type "KiCad")(uri "${EXT_PROJECT}/DAC-PCM5102APWR/KiCad/PCM5102APWR.kicad_sym")(options "")(descr ""))
 )

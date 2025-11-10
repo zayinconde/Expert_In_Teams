@@ -1,0 +1,16 @@
+.PCM5102APWR :1 ;2VRMS DirectPath, 112dB Audio Stereo DAC with 32-bit, 384kHz PCM Interface
+SOP65P640X120-20N
+*STM IC
+*NGS
+*PLB 1="CPVDD" 2="CAPP" 3="CPGND" 4="CAPM" 5="VNEG" 6="OUTL" 7="OUTR" 8="AVDD" 9="AGND" 10="DEMP" 11="FLT" 12="SCK" 13="BCK" 14="DIN" 15="LRCK" 16="FMT" 17="XSMT" 18="LDOO" 19="DGND" 20="DVDD"
+*MXP 20
+*DFN PCM5102APWR
+~!Mouser Part Number (595-PCM5102APWR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM5102APWR?qs=E2%2FxqS9xjzrfECkwEYoiyg%3D%3D)
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (PCM5102APWR)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/2/PCM5102APWR.pdf)
+~!Height (1.2mm)
+~!3D_Model (PCM5102APWR)
+PCM5102APWR
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 20.1!U 19.1!U 18.1!U 17.1!U 16.1!U 15.1!U 14.1!U 13.1!U 12.1!U 11.1!U 
