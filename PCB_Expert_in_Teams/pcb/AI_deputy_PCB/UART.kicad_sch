@@ -1077,16 +1077,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 76.2) (xy 132.08 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2bfc27fe-3a8f-447e-824b-211721a7a4f2")
-	)
-	(wire
-		(pts
 			(xy 149.86 50.8) (xy 149.86 53.34)
 		)
 		(stroke
@@ -1097,7 +1087,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 76.2) (xy 119.38 76.2)
+			(xy 111.76 76.2) (xy 113.03 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1154,16 +1144,6 @@
 			(type default)
 		)
 		(uuid "784a4118-bfa1-4d25-8d79-6ab7a5bf4d45")
-	)
-	(wire
-		(pts
-			(xy 127 78.74) (xy 132.08 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a74a078c-40f8-4ede-b4a8-147367f5879e")
 	)
 	(wire
 		(pts
@@ -1257,7 +1237,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 78.74) (xy 119.38 78.74)
+			(xy 111.76 78.74) (xy 113.03 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1304,6 +1284,72 @@
 			(type default)
 		)
 		(uuid "fa46aaf3-3261-4157-97d2-4a6ea03a3bf7")
+	)
+	(global_label "-"
+		(shape input)
+		(at 132.08 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "00ce5f79-64a2-4583-8dc5-3a75923d49e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127.5224 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+"
+		(shape input)
+		(at 120.65 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "13292f84-4090-4d84-ae7a-2120b7385513")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 125.2076 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "-"
+		(shape input)
+		(at 120.65 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1c5a6fcd-0cb5-4464-9f09-59f7c66b8667")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 125.2076 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "D-"
 		(shape input)
@@ -1367,6 +1413,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+"
+		(shape input)
+		(at 132.08 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6b8b56f8-57d9-4698-a54a-e3e446b448ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127.5224 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -1751,7 +1819,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 123.19 78.74 90)
+		(at 116.84 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1759,15 +1827,15 @@
 		(dnp no)
 		(uuid "7f7e4226-d639-4849-98fd-64ffe5bd3e88")
 		(property "Reference" "R37"
-			(at 123.444 81.534 90)
+			(at 117.094 81.534 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 123.444 84.074 90)
+		(property "Value" "27"
+			(at 117.094 84.074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1775,7 +1843,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 123.19 80.518 90)
+			(at 116.84 80.518 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1784,7 +1852,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 78.74 0)
+			(at 116.84 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1793,7 +1861,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 123.19 78.74 0)
+			(at 116.84 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2195,7 +2263,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 123.19 76.2 90)
+		(at 116.84 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2203,7 +2271,7 @@
 		(dnp no)
 		(uuid "d4c6bc66-23fd-4b4f-a21d-043eb303d246")
 		(property "Reference" "R38"
-			(at 123.444 71.374 90)
+			(at 117.094 71.374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2211,7 +2279,7 @@
 			)
 		)
 		(property "Value" "27"
-			(at 123.444 73.914 90)
+			(at 117.094 73.914 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2219,7 +2287,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 123.19 77.978 90)
+			(at 116.84 77.978 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2228,7 +2296,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 76.2 0)
+			(at 116.84 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2237,7 +2305,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 123.19 76.2 0)
+			(at 116.84 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
