@@ -3276,6 +3276,16 @@
 		)
 		(uuid "08e00a39-693e-48d5-9abd-c5e1c7113eb0")
 	)
+	(text "REMEMBER TO ADD Power Button and BL link button\n"
+		(exclude_from_sim no)
+		(at 100.584 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "342f21cb-6e69-4cf5-a74c-3c0e320bbb2c")
+	)
 	(text "find fitting res \nvalue for led\n"
 		(exclude_from_sim no)
 		(at 198.374 53.594 0)
@@ -4875,7 +4885,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal"
 			(at 78.74 93.98 0)
 			(effects
 				(font
