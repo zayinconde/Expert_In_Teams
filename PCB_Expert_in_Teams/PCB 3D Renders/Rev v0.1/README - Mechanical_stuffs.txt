@@ -14,6 +14,10 @@ Link:https://www.digikey.dk/en/products/detail/vybronics-inc/VLV101040A/12323590
 Antenna
 Link:https://dk.rs-online.com/web/p/wifi-antenner/8968279
 
+Atomizer
+https://www.amazon.de/dp/B08C2GK1GJ/ref=sspa_mw_detail_0
+(no technical datasheets available so you will need to get the physical component to measure it for the design)
+
 NOTE: I added the USBC port so you can use the datasheet for creating the dimensions of the port so it can stick out of the device.
 USB-C port
 Link:https://dk.rs-online.com/web/p/usb-stik/2857966?searchId=89c1d478-76a4-4601-9d99-01089dc37790
