@@ -1,0 +1,9 @@
+Manufacturer=Würth Elektronik
+PartNumber=744771220
+PartCategory=Inductor
+PackageCategory=Other
+PinCount=2
+Version=6.1
+Released=2017-01-12 20:05:57
+Downloaded=2025-11-24 21:48:24
+3D=Y
