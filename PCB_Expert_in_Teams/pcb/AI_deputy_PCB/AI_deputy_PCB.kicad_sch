@@ -3377,6 +3377,16 @@
 		)
 		(uuid "b5980f3f-e0ed-4f2e-b8ae-2ff761cdeb1b")
 	)
+	(text "check VIN from boost converter, piezo 12V driving circuit, \nalso i think its accidentally used in PD circuit? \non safe pwr fet"
+		(exclude_from_sim no)
+		(at 143.002 182.372 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c9bdb595-ea9f-4082-88d6-27ec8dd6afd6")
+	)
 	(text "Change to mouser footprint?\n"
 		(exclude_from_sim no)
 		(at 146.558 164.084 0)
@@ -4791,28 +4801,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VIN"
-		(shape input)
-		(at 53.34 160.02 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "aa882d27-5101-42a4-8d8e-cc3275386016")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.34 154.0109 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
