@@ -16,7 +16,7 @@ void setup() {
     out.begin(cfg);
 
     // start bluetooth a2dp sink
-    a2dp_sink.start("MyMusic");
+    a2dp_sink.start("AI Deputy"); // also device name 
 }
 
 void loop() {
