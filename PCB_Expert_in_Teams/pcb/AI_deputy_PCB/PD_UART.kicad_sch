@@ -2327,6 +2327,16 @@
 		)
 		(uuid "01e20936-0b83-40d2-8cfe-2e8af798929d")
 	)
+	(text "Changed from 4.7k to 51k \nto turn off data capability"
+		(exclude_from_sim no)
+		(at 156.21 128.778 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "05753c14-c86d-47ee-bf95-5fe89c3dc4c2")
+	)
 	(text "find fitting res \nvalue for led\n"
 		(exclude_from_sim no)
 		(at 254.254 96.012 0)
@@ -4748,7 +4758,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "51k"
 			(at 163.83 121.9199 0)
 			(effects
 				(font

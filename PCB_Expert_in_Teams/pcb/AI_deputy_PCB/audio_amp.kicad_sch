@@ -1827,6 +1827,16 @@
 		)
 		(uuid "02ea9161-9c97-4a0a-844c-e965b5257300")
 	)
+	(text "Delete Connectors add pads instead \n"
+		(exclude_from_sim no)
+		(at 260.604 77.724 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "134a97ee-505e-4db2-8b5a-87a16aa522a5")
+	)
 	(text "Speaker Output Left\n"
 		(exclude_from_sim no)
 		(at 267.716 43.942 0)
@@ -1846,6 +1856,16 @@
 			)
 		)
 		(uuid "8c2a68b5-d36a-42e0-a3fd-8cd64c238c88")
+	)
+	(text "i2S should be same trace length\n"
+		(exclude_from_sim no)
+		(at 114.808 89.154 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cf3802d3-edb1-4504-8d11-dbfaf98308b9")
 	)
 	(text "Right Amplifier\n"
 		(exclude_from_sim no)
@@ -3385,6 +3405,21 @@
 			)
 		)
 	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 241.3 73.66) (xy 280.67 73.66) (xy 280.67 82.55) (xy 241.3 82.55)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid da235254-256f-4779-86e5-fc85581071fa)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 93.98 92.71 90)
@@ -4364,7 +4399,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/2/PCM5102APWR.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/pcm5102a.pdf?ts=1764226174169&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FPCM5102A"
 			(at 80.01 264.77 0)
 			(effects
 				(font

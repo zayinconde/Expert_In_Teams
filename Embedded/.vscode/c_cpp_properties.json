@@ -10,8 +10,8 @@
             "includePath": [
                 "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/include",
                 "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/src",
-                "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/libdeps/Audio_32DAC/ESP32-A2DP/src",
-                "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/libdeps/Audio_32DAC/audio-tools/src",
+                "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/libdeps/Audio_no_dac/ESP32-A2DP/src",
+                "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/libdeps/Audio_no_dac/audio-tools/src",
                 "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/libraries/I2S/src",
                 "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
                 "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
@@ -249,8 +249,8 @@
                 "path": [
                     "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/include",
                     "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/src",
-                    "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/libdeps/Audio_32DAC/ESP32-A2DP/src",
-                    "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/libdeps/Audio_32DAC/audio-tools/src",
+                    "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/libdeps/Audio_no_dac/ESP32-A2DP/src",
+                    "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/libdeps/Audio_no_dac/audio-tools/src",
                     "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/libraries/I2S/src",
                     "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
                     "C:/Users/zayin/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
