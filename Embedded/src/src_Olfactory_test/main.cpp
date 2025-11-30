@@ -1,36 +1,19 @@
 #include <Arduino.h>
-#include "BluetoothSerial.h"
 
-
-BluetoothSerial serialBT; //global object for bluetooth
-char cmd;
-
-
-// put function declarations here:
-int myFunction(int, int);
+const int pwmPin = 32;          // GPIO32
+const int pwmChannel = 0;       // LEDC channel (0–15)
+const int pwmResolution = 8;    // 8-bit resolution
+const int pwmFrequency = 110000; // 110 kHz
 
 void setup() {
-  // put your setup code here, to run once:
-  //int result = myFunction(2, 3);
-  serialBT.begin("ESP32-BT");
-  pinMode(2, OUTPUT);
-
+  // Configure PWM channel
+  ledcSetup(pwmChannel, pwmFrequency, pwmResolution);
+  // Attach channel to pin
+  ledcAttachPin(pwmPin, pwmChannel);
+  // Set duty cycle (0–255 for 8-bit)
+  ledcWrite(pwmChannel, 128); // 50% duty cycle
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  if(serialBT.available()){
-    cmd = serialBT.read();
-  }
-  if(cmd == '1'){
-    digitalWrite(2, HIGH);
-  }
-  if(cmd == '0'){
-    digitalWrite(2, LOW);
-  }
+  // PWM runs in hardware, no code needed here
 }
-
-// put function definitions here:
-//int myFunction(int x, int y) {
-//return x + y;
-//}
