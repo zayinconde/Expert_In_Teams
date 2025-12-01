@@ -1,0 +1,9 @@
+Manufacturer=C & K COMPONENTS
+PartNumber=L101121MS02Q
+PartCategory=Switch
+PackageCategory=Other
+PinCount=2
+Version=5.2
+Released=2019-08-02 13:14:50
+Downloaded=2025-11-30 12:41:27
+3D=Y

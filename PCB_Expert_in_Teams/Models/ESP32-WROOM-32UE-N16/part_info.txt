@@ -1,0 +1,9 @@
+Manufacturer=Espressif Systems
+PartNumber=ESP32-WROOM-32UE-N16
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=47
+Version=2.4
+Released=2022-02-22 16:16:03
+Downloaded=2025-11-30 12:25:58
+3D=Y

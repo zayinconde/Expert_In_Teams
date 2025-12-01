@@ -1,0 +1,16 @@
+.L101121MS02Q :1 ;Slide Switches SWITCH SLIDE SPST 4A 125VAC
+L101021MS02Q
+*STM S
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN L101121MS02Q
+~!Mouser Part Number (611-L101121MS02Q)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/CK/L101121MS02Q?qs=LgMIjt8LuD8aORdKDdfKMg%3D%3D)
+~!Manufacturer_Name (C & K COMPONENTS)
+~!Manufacturer_Part_Number (L101121MS02Q)
+~!Link Datasheet (https://www.ckswitches.com/media/1423/l.pdf)
+~!Height (12.4mm)
+~!3D_Model (L101121MS02Q)
+L101121MS02Q
+1.1!U 2.1!U 

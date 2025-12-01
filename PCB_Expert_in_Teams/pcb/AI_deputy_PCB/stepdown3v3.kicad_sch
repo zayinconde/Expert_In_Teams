@@ -1535,7 +1535,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+BATT"
+		(symbol "power:+VDC"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -1548,7 +1548,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1556,8 +1556,8 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+BATT"
-				(at 0 3.556 0)
+			(property "Value" "+VDC"
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1582,7 +1582,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(property "Description" "Power symbol creates a global label with name \"+VDC\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1591,7 +1591,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power battery"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1600,13 +1600,24 @@
 					(hide yes)
 				)
 			)
-			(symbol "+BATT_0_1"
+			(symbol "+VDC_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -1.143 3.175) (xy 1.143 3.175)
 					)
 					(stroke
-						(width 0)
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 3.175)
+					(radius 1.905)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1615,10 +1626,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 2.032) (xy 0 4.318)
 					)
 					(stroke
-						(width 0)
+						(width 0.508)
 						(type default)
 					)
 					(fill
@@ -1627,7 +1638,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 0) (xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1638,7 +1649,7 @@
 					)
 				)
 			)
-			(symbol "+BATT_1_1"
+			(symbol "+VDC_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2084,13 +2095,13 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 83.82) (xy 72.39 83.82)
+			(xy 64.77 83.82) (xy 72.39 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "31a0241e-15ed-414b-a272-eace24a412fb")
+		(uuid "31ff20c5-b470-404e-9e9c-4fb3f5410d98")
 	)
 	(wire
 		(pts
@@ -2882,73 +2893,6 @@
 			(project "AI_deputy_PCB"
 				(path "/3784b751-4d5b-4452-8288-14e483e1cb48/82ecce59-750a-4f55-a6e5-60f0e896ad8e"
 					(reference "#PWR079")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 66.04 83.82 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22385f13-c198-4a4c-9576-cef166500711")
-		(property "Reference" "#PWR0127"
-			(at 69.85 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 62.23 83.8199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 66.04 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2653994a-fee9-4486-a720-3011c6af5cf9")
-		)
-		(instances
-			(project ""
-				(path "/3784b751-4d5b-4452-8288-14e483e1cb48/82ecce59-750a-4f55-a6e5-60f0e896ad8e"
-					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -5002,6 +4946,73 @@
 			(project ""
 				(path "/3784b751-4d5b-4452-8288-14e483e1cb48/82ecce59-750a-4f55-a6e5-60f0e896ad8e"
 					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+VDC")
+		(at 64.77 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c867a426-c14f-4521-842b-4b96a28646cf")
+		(property "Reference" "#PWR0127"
+			(at 67.31 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+VDC"
+			(at 58.42 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+VDC\""
+			(at 64.77 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7103cd2-633b-4423-bf19-739705fd0670")
+		)
+		(instances
+			(project "AI_deputy_PCB"
+				(path "/3784b751-4d5b-4452-8288-14e483e1cb48/82ecce59-750a-4f55-a6e5-60f0e896ad8e"
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)

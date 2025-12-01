@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'L101121MS02Q'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "C & K COMPONENTS", "L101121MS02Q" (!) = "", "L101021MS02Q", "Other", "611-L101121MS02Q", "https://www.mouser.co.uk/ProductDetail/CK/L101121MS02Q?qs=LgMIjt8LuD8aORdKDdfKMg%3D%3D", "Slide Switches SWITCH SLIDE SPST 4A 125VAC", "https://www.ckswitches.com/media/1423/l.pdf", "12.4 mm"
+END_PART
+
+END.

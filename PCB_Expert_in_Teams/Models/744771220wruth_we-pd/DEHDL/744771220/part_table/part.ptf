@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '744771220'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Wurth Elektronik", "744771220" (!) = "", "WE-PD_1260/1245/1280/121054", "Other", "710-744771220", "https://www.mouser.com/Search/Refine.aspx?Keyword=710-744771220", "WE-PD SMT Shielded Power Inductor Size 1260; L = 220 H ; IR = 1,1 A; Isat = 1,2 A; RDC = 340 m", "https://componentsearchengine.com/Datasheets/1/744771220.pdf", "4.5 mm"
+END_PART
+
+END.

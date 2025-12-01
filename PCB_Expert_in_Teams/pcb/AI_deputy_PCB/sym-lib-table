@@ -18,4 +18,6 @@
   (lib (name "USBC-2.0-16p-molex-217179")(type "KiCad")(uri "${EXT_PROJECT}/USBC_16p_2.0_217179-0001/2171790001.kicad_sym")(options "")(descr ""))
   (lib (name "Wurth Buttons")(type "KiCad")(uri "${EXT_PROJECT}/Wurth Buttons/430773034825.kicad_sym")(options "")(descr ""))
   (lib (name "DAC-PCM510")(type "KiCad")(uri "${EXT_PROJECT}/DAC-PCM5102APWR/KiCad/PCM5102APWR.kicad_sym")(options "")(descr ""))
+  (lib (name "esperssif- esp32-16MB")(type "KiCad")(uri "${EXT_PROJECT}/ESP32-WROOM-32UE-N16/KiCad/ESP32-WROOM-32UE-N16.kicad_sym")(options "")(descr ""))
+  (lib (name "PWR_SWITCH")(type "KiCad")(uri "${EXT_PROJECT}/PWR_SW_L101121MS02Q/KiCad/L101121MS02Q.kicad_sym")(options "")(descr ""))
 )

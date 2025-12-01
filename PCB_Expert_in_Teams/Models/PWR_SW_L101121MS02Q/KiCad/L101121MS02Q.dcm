@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP L101121MS02Q
+D Slide Switches SWITCH SLIDE SPST 4A 125VAC
+K
+F https://www.ckswitches.com/media/1423/l.pdf
+$ENDCMP
+#
+#End Doc Library

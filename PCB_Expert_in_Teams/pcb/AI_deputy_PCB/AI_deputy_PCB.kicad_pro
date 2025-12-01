@@ -56,6 +56,11 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.25,
+          "via_gap": 0.0,
+          "width": 0.25
         }
       ],
       "drc_exclusions": [],
@@ -123,7 +128,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.14,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -135,8 +140,8 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_through_hole_diameter": 0.2,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -188,7 +193,6 @@
       ],
       "track_widths": [
         0.0,
-        0.15,
         0.25,
         0.5,
         2.0
@@ -487,7 +491,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.14,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -507,7 +511,7 @@
         "clearance": 0.4,
         "name": "3A",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 2.0,
         "via_diameter": 1.2,
@@ -517,7 +521,7 @@
         "clearance": 0.25,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "via_diameter": 0.8,
@@ -525,9 +529,19 @@
       },
       {
         "clearance": 0.25,
+        "name": "I2S",
+        "pcb_color": "rgb(255, 46, 41)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.25,
         "name": "POWER 3V3",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "via_diameter": 0.8,
@@ -537,11 +551,21 @@
         "clearance": 0.2,
         "name": "SIGNAL",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.6,
         "via_drill": 0.3
+      },
+      {
+        "clearance": 0.5,
+        "name": "thickkk",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "via_diameter": 0.5,
+        "via_drill": 0.25
       }
     ],
     "meta": {
@@ -549,7 +573,20 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "I2S",
+        "pattern": "DAC_BCK"
+      },
+      {
+        "netclass": "I2S",
+        "pattern": "DAC_DIN"
+      },
+      {
+        "netclass": "I2S",
+        "pattern": "DAC_LRCK"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
