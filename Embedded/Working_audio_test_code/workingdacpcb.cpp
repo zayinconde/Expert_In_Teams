@@ -19,7 +19,7 @@ void setup() {
     cfg.bits_per_sample = info.bits_per_sample;
 
     cfg.pin_bck  = 18;
-    cfg.pin_ws   = 16; 
+    cfg.pin_ws   = 16;
     cfg.pin_data = 17;
 
     i2s.end();
