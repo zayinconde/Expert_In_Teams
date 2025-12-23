@@ -1,5 +1,0 @@
-- change 2n2F capacitor foot prints to 0603 (filter dac)
-done - order new small speaker with correct connector
-- be ready to change buck converter for 1s. saved on laptop in dcdc converter folder. (done)
-- order both smd and tht inductors just incase a perf board should be made ( i think its done
-
