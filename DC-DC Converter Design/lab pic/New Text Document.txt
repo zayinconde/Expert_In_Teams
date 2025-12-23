@@ -1,0 +1,5 @@
+scope with 20MHz bandwidth limit to avoid noise, 
+
+ripple measurmens in at 500nS and 1nS. 
+
+see scope pics for mV ripple voltage

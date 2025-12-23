@@ -1,0 +1,143 @@
+Embedded ESP32 integration how to. 
+
+My GitHub repo: https://github.com/zayinconde/Expert_In_Teams.git
+-
+-
+-
+----------- HAPTIC MOTORS -------------
+
+There are 3 haptic motors. 
+
+See my example code which works for 1 haptic motor. (IN MY GITHUB REPO dir: "Embedded/Working LRA")
+
+my code should be re-configured for 3 haptic motors. 
+
+the esp32 talks to haptic motor drivers with I2C communication protocol.
+
+the i2c protocol has 2 main wires SDA and SCL, SDA is for Data transmission and SCL is for clock. 
+
+on the ESP 32 the SDA = GPIO21, SCL = GPIO22 (PINS)
+
+there is also a an interrupt pin which is used for reading faults and should be added for debugging
+the interrupt pin is called NIRQ = GPIO 27 (PIN)
+
+please see my code as the haptic drivers need specific settings to work properly with the haptic motors!
+
+NOTE : all three motors are LRA, the motor drivers are DA7280, DA7281, DA7282
+
+the difference in motor driver names is simply the I2C address burned into them. 
+-
+-
+-
+-
+-
+-
+-
+---------speakers NO DAC------------------ old style!
+
+Speakers with built in esp32 Digital to Analog Converter (DAC)
+
+Speaker left GPIO25 (PIN)
+
+Speaker right GPIO26 (PIN)
+
+PLEASE NOTE THAT IF WE USE THE BUILT IN DAC THEN THE PINS NEED TO BE CONFIGURED AS DAC PINS 
+
+my working code in my GitHub repo dir: "Embedded/Working_audio_test_code/main_working_bl_audio_transmission.cpp"
+-
+-
+-
+-
+-
+-
+-
+-------------Bluetooth Link button -------------
+
+like any other Bluetooth device, there is a link button. 
+
+it should work in some way that if you hold the button for a certain amount of time
+then the device will go into Bluetooth pairing mode and begin searching for a Bluetooth connection
+
+the BT link button is on pin GPIO5. 
+
+this is a standard momentary push button so when it is pushed the pin goes to ground. 
+-
+-
+-
+-
+-
+-
+----------- speakers with DAC ---------------
+still need to get working but hopefully works on PCB
+if we use the built in PCM5102A 32 bit dac then it must be configured using the I2S protocol. 
+
+the esp32 will transmit the received Bluetooth audio through I2S protocol and will be converted to analog externally. 
+
+using a library you should be able to set some settings for the DAC. 
+
+off the top of my head im thinking:
+
+stereo 16 bit rate, 44.1kHz sampling frequency. (set in code)
+
+The I2S transmission pins on the esp 32 are:
+
+LRCK : GPIO16
+DIN : GPIO17
+BCK : GPIO18
+
+no MCLK! (master clock)
+-
+-
+-
+-
+-
+-
+-
+------------ Scent emitter -----------
+
+for the scent emitter (olfactory system) 
+
+i have also made some code which you can look at. dir: "Embedded/src/src_Olfactory_test/main.cpp"
+
+the most important is that it is a PWM signal at 110kHz (50% duty cycle)
+
+look at my code. 
+
+the code should be simple, when we need scent then we just turn on or enable the PWM signal of 110kHz
+
+The PWM signal should be generated on pin GPIO32
+-
+-
+-
+-
+-
+-
+----------- other additional not so relevant things --------------------
+
+universal asynchronous receiver/transmitter (uart protocol)
+UART is the serial communication interface used for flashing new code onto the esp32 (USBC)
+
+GPIO 1 is the transmission pin
+
+GPIO 3 is the receiver pin
+
+-
+-
+I have also added a JTAG for debugging (probs wont use, serial print statements through UART SHOULD BE SUFFICENT)
+regardless....
+
+JTAG PINS ON ESP32
+GPIO12 = TDI (PULLED DOWN)
+GPIO13 = TCK
+GPIO14 = TMS
+GPIO15 = TDO
+
+
+
+
+
+
+
+
+
+
