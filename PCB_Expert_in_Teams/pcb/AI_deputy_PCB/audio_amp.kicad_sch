@@ -1838,6 +1838,16 @@
 		)
 		(uuid "e1cdae65-b7d6-4a00-b3f3-aced498588b6")
 	)
+	(text "Had to delete the pull down resistor cause xsmt needs 3.3V \n"
+		(exclude_from_sim no)
+		(at 171.196 78.486 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e7a9ebd8-4711-4e14-a743-e3beb55447fd")
+	)
 	(junction
 		(at 38.1 104.14)
 		(diameter 0)
