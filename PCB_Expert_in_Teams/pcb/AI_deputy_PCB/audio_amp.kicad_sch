@@ -1838,6 +1838,16 @@
 		)
 		(uuid "e1cdae65-b7d6-4a00-b3f3-aced498588b6")
 	)
+	(text "Had to delete the pull down resistor cause xsmt needs 3.3V \n"
+		(exclude_from_sim no)
+		(at 171.196 78.486 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e7a9ebd8-4711-4e14-a743-e3beb55447fd")
+	)
 	(junction
 		(at 38.1 104.14)
 		(diameter 0)
@@ -1957,12 +1967,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed7fea12-54b7-4685-8a29-534c97394d6a")
-	)
-	(junction
-		(at 120.65 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ee884335-4636-48b9-acfd-e7f5d42bdf94")
 	)
 	(junction
 		(at 36.83 74.93)
@@ -4131,74 +4135,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 120.65 82.55 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0cf281db-e1a7-4f2c-b4ba-88dcb2f91a65")
-		(property "Reference" "R1"
-			(at 116.078 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.7k"
-			(at 116.332 83.312 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 118.872 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 120.65 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7983d8f5-7378-4b46-bb4a-d2594f60bb78")
-		)
-		(pin "1"
-			(uuid "a7aa2173-6ba6-40fc-a710-0749cbee8fff")
-		)
-		(instances
-			(project "AI_deputy_PCB"
-				(path "/3784b751-4d5b-4452-8288-14e483e1cb48/4600983a-86b8-49e8-8db6-b0ddbc3ab361"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 143.51 50.8 270)
 		(unit 1)
@@ -4260,71 +4196,6 @@
 			(project "AI_deputy_PCB"
 				(path "/3784b751-4d5b-4452-8288-14e483e1cb48/4600983a-86b8-49e8-8db6-b0ddbc3ab361"
 					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 120.65 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "108882d0-d0b9-405b-8851-794f44c88f69")
-		(property "Reference" "#PWR020"
-			(at 120.65 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 120.904 90.678 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 120.65 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "582722f7-0c41-48bf-aa0a-07285fbc17fc")
-		)
-		(instances
-			(project "AI_deputy_PCB"
-				(path "/3784b751-4d5b-4452-8288-14e483e1cb48/4600983a-86b8-49e8-8db6-b0ddbc3ab361"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -7708,7 +7579,7 @@
 				)
 			)
 		)
-		(property "Value" "7.5k"
+		(property "Value" "8.2k"
 			(at 116.332 75.692 0)
 			(effects
 				(font

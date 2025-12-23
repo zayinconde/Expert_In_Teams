@@ -593,7 +593,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../../PCB 2D DXF/rev v0.2 pcb dxf/",
+      "plot": "../../PCB 2D DXF/rev v0.2 pcb dxf/pcb_dxf_metric",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "../../PCB 3D Renders/Rev v0.2/AI_deputy_PCB_V2.step",
