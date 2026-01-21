@@ -1,121 +1,112 @@
 #include <Arduino.h>
 #include <Wire.h>
+#include <Haptic_Driver.h>
 
-// Found by your scan:
-static const uint8_t ADDR_48 = 0x48; // DA7281
-static const uint8_t ADDR_4A = 0x4A; // DA7280 + DA7282 (both respond)
+Haptic_Driver haptic;          // address fixed to 0x4A by this lib
+// const int PIN_INT = 27;     // not needed for this test
 
-// DA728x key registers (per datasheet/app notes):
-static const uint8_t REG_IRQ_EVENT1    = 0x03; // write-1-to-clear bits (safe write-only clear attempt)
-static const uint8_t REG_IRQ_EVENT2    = 0x04;
-static const uint8_t REG_IRQ_EVENT3    = 0x05;
-static const uint8_t REG_OPERATIONMODE = 0x22; // OPERATION_MODE [2:0]
-static const uint8_t REG_OVERRIDE_VAL  = 0x23; // OVERRIDE_VAL (drive level) in DRO mode
-
-static const uint8_t MODE_INACTIVE = 0x00;
-static const uint8_t MODE_DRO      = 0x01; // Direct Register Override (DRO) :contentReference[oaicite:3]{index=3}
-
-struct regWrite { uint8_t reg; uint8_t val; };
-
-// --- your tuning table (unchanged) ---
-regWrite lraTuningData[] = {
-  {0x03,0x00},{0x04,0x00},{0x05,0x00},{0x07,0x00},{0x08,0x40},
-  {0x0A,0x22},{0x0B,0x3C},{0x0C,0x6B},{0x0D,0x6B},{0x0E,0x1F},
-  {0x0F,0x00},{0x10,0x98},{0x13,0x18},{0x14,0x11},{0x15,0x03},
-  {0x16,0x40},{0x17,0x81},{0x1C,0x0E},{0x1D,0x20},{0x1E,0x03},
-  {0x1F,0x20},{0x20,0x43},{0x22,0x00},{0x23,0x36},{0x24,0x08},
-  {0x25,0x61},{0x26,0xB4},{0x27,0xEC},{0x28,0x00},{0x29,0x00},
-  {0x2A,0x08},{0x2B,0x10},{0x2D,0x80},{0x48,0x1D},{0x49,0x04},
-  {0x4C,0x02},{0x5F,0x0E},{0x60,0x9D},{0x62,0x6F},{0x6E,0x00},
-  {0x81,0x04},
-  // rest zeros...
-  {0x83,0x00},{0x84,0x00},{0x85,0x00},{0x86,0x00},{0x87,0x00},
-  {0x88,0x00},{0x89,0x00},{0x8A,0x00},{0x8B,0x00},{0x8C,0x00},
-  {0x8D,0x00},{0x8E,0x00},{0x8F,0x00},{0x90,0x00},{0x91,0x00},
-  {0x92,0x00},{0x93,0x00},{0x94,0x00},{0x95,0x00},{0x96,0x00},
-  {0x97,0x00},{0x98,0x00},{0x99,0x00},{0x9A,0x00},{0x9B,0x00},
-  {0x9C,0x00},{0x9D,0x00},{0x9E,0x00},{0x9F,0x00},{0xA0,0x00},
-  {0xA1,0x00},{0xA2,0x00},{0xA3,0x00},{0xA4,0x00},{0xA5,0x00},
-  {0xA6,0x00},{0xA7,0x00},{0xA8,0x00},{0xA9,0x00},{0xAA,0x00},
-  {0xAB,0x00},{0xAC,0x00},{0xAD,0x00},{0xAE,0x00},{0xAF,0x00},
-  {0xB0,0x00},{0xB1,0x00},{0xB2,0x00},{0xB3,0x00},{0xB4,0x00},
-  {0xB5,0x00},{0xB6,0x00},{0xB7,0x00},{0xB8,0x00},{0xB9,0x00},
-  {0xBA,0x00},{0xBB,0x00},{0xBC,0x00},{0xBD,0x00},{0xBE,0x00},
-  {0xBF,0x00},{0xC0,0x00},{0xC1,0x00},{0xC2,0x00},{0xC3,0x00},
-  {0xC4,0x00},{0xC5,0x00},{0xC6,0x00},{0xC7,0x00},{0xC8,0x00},
-  {0xC9,0x00},{0xCA,0x00},{0xCB,0x00},{0xCC,0x00},{0xCD,0x00},
-  {0xCE,0x00},{0xCF,0x00},{0xD0,0x00},{0xD1,0x00},{0xD2,0x00},
-  {0xD3,0x00},{0xD4,0x00},{0xD5,0x00},{0xD6,0x00},{0xD7,0x00},
-  {0xD8,0x00},{0xD9,0x00},{0xDA,0x00},{0xDB,0x00},{0xDC,0x00},
-  {0xDD,0x00},{0xDE,0x00},{0xDF,0x00},{0xE0,0x00},{0xE1,0x00},
-  {0xE2,0x00},{0xE3,0x00},{0xE4,0x00},{0xE5,0x00},{0xE6,0x00},
-  {0xE7,0x00}
-};
-
-static bool writeReg(uint8_t addr, uint8_t reg, uint8_t val) {
-  Wire.beginTransmission(addr);
-  Wire.write(reg);
-  Wire.write(val);
-  return (Wire.endTransmission() == 0);
+static void assertMsg(bool ok, const char* msg) {
+  Serial.print(msg); 
+  Serial.println(ok ? " OK" : " FAIL");
 }
 
-static void writeBoth(uint8_t reg, uint8_t val) {
-  writeReg(ADDR_4A, reg, val);
-  writeReg(ADDR_48, reg, val);
-}
+static void printStatus() {
+  status_t s = haptic.getIrqStatus();    // status flags
+  event_t  e = haptic.getIrqEvent();     // event/irq flags
+  diag_status_t d = haptic.getEventDiag(); // diag flags
 
-static void programTuningTo(uint8_t addr) {
-  for (size_t i = 0; i < sizeof(lraTuningData) / sizeof(lraTuningData[0]); i++) {
-    writeReg(addr, lraTuningData[i].reg, lraTuningData[i].val);
-  }
-}
-
-static void clearIrqWriteOnly() {
-  // "Write 1 to clear" style registers; harmless if bits aren't set.
-  writeBoth(REG_IRQ_EVENT1, 0xFF);
-  writeBoth(REG_IRQ_EVENT2, 0xFF);
-  writeBoth(REG_IRQ_EVENT3, 0xFF);
-}
-
-static void setAmp127(uint8_t amp) {
-  if (amp > 127) amp = 127;                // IMPORTANT: 0..127 like the known working examples :contentReference[oaicite:4]{index=4}
-
-  // Recommended DRO order: OVERRIDE first, then set DRO mode. :contentReference[oaicite:5]{index=5}
-  writeBoth(REG_OVERRIDE_VAL, amp);
-  writeBoth(REG_OPERATIONMODE, (amp == 0) ? MODE_INACTIVE : MODE_DRO);
+  Serial.print("STATUS: 0x"); Serial.println((uint8_t)s, HEX);
+  Serial.print("EVENT : 0x"); Serial.println((uint8_t)e, HEX);
+  Serial.print("DIAG  : 0x"); Serial.println((uint8_t)d, HEX);
+  // Clear everything so next read shows fresh flags
+  haptic.clearIrq(0xFF);
 }
 
 void setup() {
   Serial.begin(115200);
-  delay(300);
-
+  delay(200);
   Wire.begin(21, 22);
-  Wire.setClock(400000);
 
-  Serial.println("Programming tuning to 0x4A and 0x48 (write-only)...");
-  programTuningTo(ADDR_4A);
-  programTuningTo(ADDR_48);
+  if (!haptic.begin(Wire)) {
+    Serial.println("begin() FAIL — check I2C/wiring");
+    while (1) {}
+  }
+  Serial.println("begin() OK");
 
-  clearIrqWriteOnly();
+  // Configure the driver conservatively for your ERM coin
+  assertMsg(haptic.setActuatorType(ERM_TYPE), "setActuatorType(ERM)");
+  // or: assertMsg(haptic.enableCoinERM(), "enableCoinERM()");
 
-  Serial.println("Starting test...");
-  setAmp127(0);
+  // Safe limits (tweak if needed)
+  assertMsg(haptic.setActuatorNOMVolt(2.7f), "setActuatorNOMVolt(2.7V)");
+  assertMsg(haptic.setActuatorABSVolt(3.0f), "setActuatorABSVolt(3.0V)");
+  assertMsg(haptic.setActuatorIMAX(0.10f),   "setActuatorIMAX(0.10A)");
+  assertMsg(haptic.setActuatorImpedance(26.0f), "setActuatorImpedance(26Ω)");
+
+  // Helpers for ERM
+  assertMsg(haptic.enableRapidStop(true), "enableRapidStop(true)");
+  assertMsg(haptic.enableAmpPid(true),    "enableAmpPid(true)");
+  assertMsg(haptic.enableFreqTrack(false),"enableFreqTrack(false)");
+
+  // Go to RTWM (real-time amplitude control)
+  assertMsg(haptic.setOperationMode(RTWM_MODE), "setOperationMode(RTWM)");
+
+  Serial.println("=== Initial RTWM pulse ===");
+  haptic.setVibrate(200); delay(200);
+  haptic.setVibrate(0);   delay(200);
+
+  printStatus();
+
+  Serial.println("=== RTWM ramp 0..200..0 ===");
+  for (int a = 0; a <= 200; a += 10) { haptic.setVibrate(a); delay(50); }
+  for (int a = 200; a >= 0; a -= 10) { haptic.setVibrate(a); delay(40); }
+  haptic.setVibrate(0);
+  printStatus();
+
+  // As a fallback, try a tiny memory pattern (DRO mode play)
+  Serial.println("=== Memory play fallback ===");
+  assertMsg(haptic.setOperationMode(DRO_MODE), "setOperationMode(DRO)");
+  haptic.eraseWaveformMemory(0xFF);     // clear all
+  haptic.createHeader(0x01, 0x01);      // sequence 1, 1 frame
+  // snippet: ramp, amplitude=5, timeBase=3 (adjust amplitude up if weak)
+  assertMsg(haptic.addSnippet(RAMP, 5, 3), "addSnippet(RAMP,5,3)");
+  // frame: (seqId, startSnippet, endSnippet)
+  (void)haptic.addFrame(0x01, 0x01, 0x01);
+  assertMsg(haptic.playFromMemory(true), "playFromMemory(true)");
+
+  delay(400);
+  printStatus();
+
+  Serial.println("=== TEST DONE ===");
 }
 
 void loop() {
-  setAmp127(127);
-  Serial.println("ON (127)");
-  delay(1000);
+  // stay in RTWM; drive hard for 8 seconds so you can test
+  haptic.setVibrate(255);   // strongest
+  delay(8000);
+  haptic.setVibrate(0);
+  delay(2000);
+  Serial.println("Done with long test");
 
-  setAmp127(0);
-  Serial.println("OFF");
-  delay(1000);
+    // Switch to DRO and play a short built-in pattern
+  haptic.setOperationMode(DRO_MODE);
+  haptic.eraseWaveformMemory(0xFF);
 
-  setAmp127(60);
-  Serial.println("ON (60)");
-  delay(1000);
+  // Sequence 1 with 1 frame
+  haptic.createHeader(0x01, 0x01);
 
-  setAmp127(0);
-  Serial.println("OFF");
-  delay(1000);
+  // One snippet: ramp, higher amplitude, moderate timebase
+  haptic.addSnippet(RAMP, 15, 3);     // try amplitudes 10..25 if needed
+
+  // Frame: (sequenceId, startSnippetIdx, endSnippetIdx)
+  haptic.addFrame(0x01, 0x01, 0x01);
+
+  // Loop once and play
+  haptic.setSeqControl(0x01, 0x01);
+  haptic.playFromMemory(true);
+
+  delay(1500);
+  Serial.println("Done with DRO sequence test");
 }
+
+

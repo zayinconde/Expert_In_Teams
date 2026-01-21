@@ -28,10 +28,9 @@ if(haptic.begin(Wire)){
   haptic.setActuatorType(ERM_TYPE); // set motor type to ERM
 
   Serial.println("Setting I2C Operation");
-  haptic.setOperationMode(DRO_MODE); // set to I2C control mode
+  //haptic.setOperationMode(DRO_MODE); // set to I2C control mode
+  haptic.setOperationMode(DRO_MODE); // set to real-time mode
   Serial.println("Ready boiiii!");
-
-  
 
   haptic.enableFreqTrack(false); // disable freq track for coin ERM
 
@@ -44,7 +43,7 @@ if(haptic.begin(Wire)){
   haptic.enableAmpPid(true);
 
 
- 
+
 
 
 }
@@ -57,9 +56,5 @@ void loop() {
   haptic.setVibrate(0); // stop vibration
   Serial.println("Stopping Vibration");
   delay(1000);
-
-  Serial.print("Current mode: ");
-  Serial.println(haptic.getOperationMode()); // if supported
-
 
 }

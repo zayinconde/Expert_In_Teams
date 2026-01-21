@@ -12,35 +12,21 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-<<<<<<< HEAD
-            "executable": "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/build/Haptic/firmware.elf",
-            "projectEnvName": "Haptic",
-=======
-            "executable": "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/.pio/build/Olfactory_test/firmware.elf",
-            "projectEnvName": "Olfactory_test",
->>>>>>> 409bb75c4d325aeb7be9ed733b6fc9098439204f
+            "executable": "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/.pio/build/demo/firmware.elf",
+            "projectEnvName": "demo",
             "toolchainBinDir": "C:/Users/zayin/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "preLaunchTask": {
                 "type": "PlatformIO",
-<<<<<<< HEAD
-                "task": "Pre-Debug (Haptic)"
-=======
-                "task": "Pre-Debug (Olfactory_test)"
->>>>>>> 409bb75c4d325aeb7be9ed733b6fc9098439204f
+                "task": "Pre-Debug (demo)"
             }
         },
         {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-<<<<<<< HEAD
-            "executable": "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/build/Haptic/firmware.elf",
-            "projectEnvName": "Haptic",
-=======
-            "executable": "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/.pio/build/Olfactory_test/firmware.elf",
-            "projectEnvName": "Olfactory_test",
->>>>>>> 409bb75c4d325aeb7be9ed733b6fc9098439204f
+            "executable": "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/.pio/build/demo/firmware.elf",
+            "projectEnvName": "demo",
             "toolchainBinDir": "C:/Users/zayin/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart"
         },
@@ -48,13 +34,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-<<<<<<< HEAD
-            "executable": "C:/Users/zayin/OneDrive/Desktop/Expert In Teams (AI Deputy)/Embedded/.pio/build/Haptic/firmware.elf",
-            "projectEnvName": "Haptic",
-=======
-            "executable": "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/.pio/build/Olfactory_test/firmware.elf",
-            "projectEnvName": "Olfactory_test",
->>>>>>> 409bb75c4d325aeb7be9ed733b6fc9098439204f
+            "executable": "C:/Users/zayin/OneDrive - Syddansk Universitet/Desktop/Expert in Teams - AI Deputy/Embedded/.pio/build/demo/firmware.elf",
+            "projectEnvName": "demo",
             "toolchainBinDir": "C:/Users/zayin/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "loadMode": "manual"
