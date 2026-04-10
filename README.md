@@ -1,4 +1,4 @@
-This is my expert and teams electronics repository. The project is a multi-dsiciplinary project. This repository contains all the files related to the electronics part my me (Zayin Conde). 
+This is my expert and teams electronics repository. The project is a multi-dsiciplinary project. This repository contains all the files related to the electronics part by me (Zayin Conde). 
 
 The embedded software is developed in VS code using platformio cross platform developemnt tool. 
 
